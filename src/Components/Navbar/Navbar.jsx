@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/ABC_green.png";
+import Logo from "../../assets/Logos/logo.png";
 
 const sectionIds = ["home", "about", "products", "gallery", "contact"]; // Add your section ids here
 
@@ -44,7 +44,7 @@ function Navbar() {
   return (
     <nav
       className={`fixed w-screen z-30 ${
-        isScrolled ? "bg-white shadow-lg" : "hidden"
+        isScrolled ? "bg-dark shadow-lg" : "hidden"
       }`}
     >
       <div className={`max-w-7xl sm:px-6 `}>
@@ -52,7 +52,7 @@ function Navbar() {
           <div className="flex items-center w-screen">
             <div className="flex-shrink-0 w-[20%]">
               <img
-                className="h-16 w-16 ml-20 max-[767px]:h-12 max-[767px]:w-12 max-[767px]:ml-12 cursor-pointer"
+                className=" w-28 ml-20 max-[767px]:h-12 max-[767px]:w-12 max-[767px]:ml-12 cursor-pointer"
                 src={Logo}
                 alt="Workflow"
                 onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}

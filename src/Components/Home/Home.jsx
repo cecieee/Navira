@@ -7,22 +7,22 @@ import { useState, useEffect } from "react";
 
 const slides = [
   {
-    name: "ABC DECOR",
+    name: "NAVIRA",
     tagline: " ",
     img: "https://thehomemakersindia.com/wp-content/uploads/2022/09/2.png",
   },
   {
-    name: "Kitchens",
-    tagline: "Innovate",
+    name: "Workshops",
+    tagline: "Learn",
     img: Kitchen9,
   },
   {
-    name: "Wardrobes",
+    name: "CULTURALS",
     tagline: "Classic",
     img: "https://thehomemakersindia.com/wp-content/uploads/2022/09/3.png",
   },
   {
-    name: "Storage",
+    name: "sESSIONS",
     tagline: "Elegant",
     img: multi,
   },
@@ -68,7 +68,7 @@ function Home() {
 
   return (
     <div id="home" className={classNames("slider", { "s--ready": sliderReady })}>
-      <div className="h-screen w-screen absolute flex justify-center items-center">
+      <div className="absolute flex items-center justify-center w-screen h-screen">
         <div className="h-[50vh] w-[50vw] backdrop-blur-sm z-10 max-[767px]:w-[80vw]"></div>
     </div>
       <div className="h-full w-full z-10 opacity-20 absolute bg-[#111827]"></div>
@@ -85,13 +85,13 @@ function Home() {
             })}
             key={slide.name}
           >
-            <div className="slider__slide-content relative z-10">
+            <div className="relative z-10 slider__slide-content">
               <div className="h-[50vh] w-[50vw] head-cont flex flex-col justify-center items-center z-10 max-[767px]:w-[80vw] max-[767px]:border-[3px]">
                 
                 <div className="corner"></div>
                 <div className="corner"></div>
                 <div className="corner"></div>
-                <h3 className="slider__slide-subheading relative">
+                <h3 className="relative slider__slide-subheading">
                   {slide.tagline || slide.name}
                 </h3>
                 <h2 className="slider__slide-heading font-home-heading max-[1200px]:text-[6vw] max-[767px]:text-[8.5vw]">

@@ -5,9 +5,9 @@
 
 @keyframes growWidth {
   from {
-    width: 0%;
+    width: 0%; /* Start from 0% width */
   }
   to {
-    width: 19%;
+    width: 0%; /* End at 100% width */
   }
 }

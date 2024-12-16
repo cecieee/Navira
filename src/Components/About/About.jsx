@@ -41,9 +41,9 @@ function About() {
         {/* <h1 className="flex w-full mt-5 text-3xl text-start " data-aos='flip-up' data-aos-duration="1000">We have the Right Solution</h1> */}
         <h1 className="text-secondary text-4xl font-heading w-full mt-10 min-[1000px]:text-start">About NAVIRA</h1>
 
-        <span ref={elementRef} className={`bg-secondary w-[30vh] h-1 rounded-full mt-1 ${isVisible ? 'animate' : ''}`}></span>
+        <span ref={elementRef} className={`bg-secondary  h-1 rounded-full mt-1 ${isVisible ? 'animate' : ''}`}></span>
         <p className="flex w-full mt-10 text-lg text-wrap" data-aos="fade-up" data-aos-duration="800">Creating a beautiful and welcoming home is a universal aspiration. At ABC Decor, we believe that the essence of one's heart resides in the home.</p>
-        <div className="flex flex-wrap gap-10 min-[790px]:justify-center min-[790px]:gap-10 text-center min-[1000px]:text-start min-[1230px]:gap-13 min-[1330px]:gap-14">
+        {/* <div className="flex flex-wrap gap-10 min-[790px]:justify-center min-[790px]:gap-10 text-center min-[1000px]:text-start min-[1230px]:gap-13 min-[1330px]:gap-14">
 
           <div className='flex flex-col pt-5 w-fit min-[790px]:w-[35%] min-[1000px]:w-[45%] min-[1230px]:w-[45%]'>
             <h1 className='pb-5 text-2xl' data-aos="fade-up" data-aos-duration="500">Heading1</h1>
@@ -61,7 +61,7 @@ function About() {
               <h1 className='pb-5 text-2xl' data-aos="fade-up" data-aos-duration="500">Heading</h1>
               <p data-aos="fade-up" className='text-justify text-pretty' data-aos-duration="500">"The ethereal glow of twilight cast a mesmerizing spell over the tranquil landscape. A symphony of crickets and frogs played in harmony, creating a soothing melody that echoed through the air. </p>
         </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

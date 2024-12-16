@@ -8,13 +8,12 @@ import lw from '../../assets/lights-w.png'
 import sb from '../../assets/space-b.png'
 import sw from '../../assets/space-w.png'
 
-import './Whyus.css';
+import './Industrial Visits.css';
 
 const cardList = [
-  { img1: db,img2:dw, title: 'Dreamhome', delay: '0', desc: 'The ethereal glow of twilight cast a mesmerizing spell over the tranquil landscape. A symphony of crickets and frogs played in harmony, creating a soothing melody that echoed through the air.' },
-  { img1: bb,img2:bw, title: 'Budget', delay: '100', desc: 'The ethereal glow of twilight cast a mesmerizing spell over the tranquil landscape. A symphony of crickets and frogs played in harmony, creating a soothing melody that echoed through the air.' },
-  { img1: lb,img2:lw, title: 'Lights', delay: '200', desc: 'The ethereal glow of twilight cast a mesmerizing spell over the tranquil landscape. A symphony of crickets and frogs played in harmony, creating a soothing melody that echoed through the air.' },
-  { img1: sb,img2:sw, title: 'Space', delay: '300', desc: 'The ethereal glow of twilight cast a mesmerizing spell over the tranquil landscape. A symphony of crickets and frogs played in harmony, creating a soothing melody that echoed through the air.' }
+  { img1: db,img2:dw, title: 'Water Authority', delay: '0', desc: 'The ethereal glow of twilight cast a mesmerizing spell over the tranquil landscape. A symphony of crickets and frogs played in harmony, creating a soothing melody that echoed through the air.' },
+  { img1: lb,img2:lw, title: 'KSEB (220kV Substation)', delay: '200', desc: 'The ethereal glow of twilight cast a mesmerizing spell over the tranquil landscape. A symphony of crickets and frogs played in harmony, creating a soothing melody that echoed through the air.' },
+  { img1: sb,img2:sw, title: 'ASAP', delay: '300', desc: 'The ethereal glow of twilight cast a mesmerizing spell over the tranquil landscape. A symphony of crickets and frogs played in harmony, creating a soothing melody that echoed through the air.' }
 ];
 
 
@@ -23,7 +22,7 @@ function Card ({img1, img2, title, desc, delay}){
   const [image, setImage] = useState(img1);
   return (
     <div className=''>
-      <div className='group  border-tertiary border-[3.5px] w-[20vw] min-w-[200px] overflow-hidden relative bg-white h-[60vh]  p-6 flex flex-col  gap-10 cursor-pointer
+      <div className='group  border-tertiary border-[3.5px] w-[20vw] min-w-[200px] overflow-hidden relative bg-quarternery h-[60vh]  p-6 flex flex-col  gap-10 cursor-pointer
        hover:scale-105 hover:bg-secondary transision-all duration-500 hover:shadow-2xl shadow-black mb-5  
         max-[890px]:w-[40vw]  max-[1240px]:py-10 max-[1240px]:gap-7 max-[1100px]:p-3 max-[1100px]:py-5 max-[450px]:w-[80vw] max-[1420px]:gap-8'
          onMouseEnter={() => setImage(img2) }
@@ -67,11 +66,11 @@ function Whyus() {
   
   return (
     <div className='flex flex-col w-screen p-20 max-[920px]:p-5 h-fit max-[1100px]:p-10'>
-      <div className='flex flex-col justify-center w-full mb-20  '>
-        <span className='text-5xl font-bold font-heading text-secondary  text-center mb-3'>Why Choose US</span>
+      <div className='flex flex-col justify-center w-full mb-20 '>
+        <span className='mb-3 text-5xl font-bold text-center font-heading text-secondary'>Industrial Visits</span>
         <span ref={elementRef} className={`bg-secondary w-[30vh] h-1 rounded-full mt-1 ${isVisible ? 'animate1' : ''}`}></span>
       </div>
-            <div className='w-fit h-fit my-10 flex max-[1100px]:self-center max-[930px]:gap-3 justify-center gap-5 flex-wrap max-[1024px]:w-full'>
+            <div className='w-full h-fit my-10 flex max-[1100px]:self-center max-[930px]:gap-3 justify-center  gap-5 flex-wrap max-[1024px]:w-full'>
               {cardList.map((item, index)=>(
                 <Card key={index} img1={item.img1} img2={item.img2} title={item.title} delay={item.delay} desc={item.desc} />))
               }

@@ -6,13 +6,14 @@ import { useLocation } from 'react-router-dom'
 import About from './Components/About/About'
 import Footer from './Components/Footer/Footer'
 import Mapsection from './Components/Mapsection/Mapsection'
-import Products from './Components/Products/Products'
-import Vision from './Components/Vision/Vision'
-import Whyus from './Components/Whyus/Whyus'
+import Products from './Components/Workshops/Workshops.jsx'
+import Vision from './Components/Why Navira/Why Navira.jsx'
+import Whyus from './Components/Industrial Visits/Industrial Visits.jsx'
 import { BrowserRouter,Routes,Route } from 'react-router-dom/dist'
 import Gallery from './Pages/Gallery/Gallery.jsx'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Home from './Components/Home/Home.jsx'
+import Organizer from './Components/Organizers/Organizers.jsx'
 import Loading from './Components/Loading/Loading.jsx'
 
 if (window.innerWidth > 767)
@@ -44,10 +45,11 @@ function App() {
             <Navbar />
             <Home />
             <About />
+            <Organizer />
             <Products />
             <Vision />
             <Whyus />
-            <Mapsection />
+            {/* <Mapsection /> */}
           </div>
         }></Route>
         <Route exact path="/gallery" element={<Gallery title={'Our Gallery'} />}></Route>
