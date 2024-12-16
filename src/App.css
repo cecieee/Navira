@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Ephesis&display=swap");
+
+/* *::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: #F8F4F3;
+    
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #697F31;
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  } */
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.mapsection {
+  background-image: url(".//assets/map.png");
+}
+
+@font-face {
+  font-family: "HeroBold";
+  src: url("./assets/HeroLight-Bold.otf");
+}
+/* Olive Green hex: #87B052 */

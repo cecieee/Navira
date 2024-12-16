@@ -1,0 +1,15 @@
+.animate1 {
+  width: 0%; /* Start from 0% width */
+  animation: growWidth1 1s ease forwards; /* Animation duration is 1 second */
+}
+
+@keyframes growWidth1 {
+  0% {
+    width: 0%; /* Start from 0% width */
+    margin-left: 50%; /* Start from the middle */
+  }
+  100% {
+    width: 30%; /* End at 40% width */
+    margin-left: 35%; /* Adjust as needed to center the expansion */
+  }
+}
