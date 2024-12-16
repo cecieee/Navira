@@ -8,6 +8,7 @@ export default {
         secondary: "#dfb479",
         primary: "#22224d",
         tertiary: "rgba(105, 127, 49, 0.5)",
+        quarternery:"#422c55"
       },
       backgroundImage: {
         kitchen: "url('src/assets/kitchen9.png')",
