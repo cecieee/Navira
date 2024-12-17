@@ -19,6 +19,7 @@ const cardList = [
     delay: "0",
     hover_img: _01_hover,
     classname: "pb-7",
+    cardpadding: "pb-24",
   },
   {
     img: _02,
@@ -27,22 +28,28 @@ const cardList = [
     delay: "100",
     hover_img: _02_hover,
     classname: "pb-7",
+    cardpadding: "pb-24",
   },
   {
     img: _03,
     title: "Sensor Integration and IOT development",
     desc: "The efficacy in transmitting and receiving real-time data is crucial in applications where timely and accurate information is essential. The workshop on Sensor Integration and IoT by Navira offers an opportunity to enhance skills in sensor integration and IoT solution development.",
+    // desc: "Enhance your skills in sensor integration and IoT development with Navira's workshop, focusing on real-time data transmission and building efficient IoT solutions for practical applications.",
     delay: "200",
     hover_img: _03_hover,
     classname: "",
+    cardpadding: "pb-16",
   },
 ];
 // data-aos='fade-left' data-aos-duration='200' data-aos-delay={delay}
-function Card({ img, title, desc, delay, hover_img, classname }) {
+function Card({ img, title, desc, delay, hover_img, classname, cardpadding }) {
   return (
     <>
       <div
-        className="group w-[20vw] max-[890px]:w-[40vw] min-w-[200px] max-[1240px]:py-10 max-[1240px]:gap-7 max-[1100px]:p-3 max-[1100px]:py-5 max-[450px]:w-[80vw] overflow-hidden text-white relative bg-quarternery h-full  p-6 py-14 flex flex-col gap-10 max-[1420px]:gap-8 cursor-pointer hover:scale-105 transision-all  duration-200 hover:shadow-2xl shadow-black"
+        className={
+          "group w-[20vw] max-[890px]:w-[40vw] min-w-[200px]  self-stretch   max-[1240px]:py-10 max-[1240px]:gap-7 max-[1100px]:p-3 max-[1100px]:py-5 max-[450px]:w-[80vw] overflow-hidden text-white relative bg-quarternery h-full flex-1 p-6 py-14 flex flex-col gap-10 max-[1420px]:gap-8 cursor-pointer hover:scale-105 transision-all  duration-200 hover:shadow-2xl shadow-black " +
+          cardpadding
+        }
         data-aos="fade-left"
         data-aos-duration="200"
         data-aos-delay={delay}>
@@ -109,7 +116,7 @@ function Products() {
           isVisible ? "w-[16%]" : "w-[0%]"
         }`}></span>
 
-      <div className=" w-fit h-fit my-10 flex max-[1100px]:self-center max-[930px]:gap-3 justify-center gap-5 flex-wrap max-[1024px]:w-full ">
+      <div className=" w-fit h-fit my-10 items-stretch flex max-[1100px]:self-center max-[930px]:gap-3 justify-center gap-5 flex-wrap max-[1024px]:w-full ">
         {cardList.map((item, index) => (
           <Card
             key={index}
@@ -119,6 +126,7 @@ function Products() {
             delay={item.delay}
             hover_img={item.hover_img}
             classname={item.classname}
+            cardpadding={item.cardpadding}
           />
         ))}
       </div>
