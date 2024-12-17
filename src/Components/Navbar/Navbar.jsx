@@ -60,7 +60,7 @@ function Navbar() {
   return (
     <nav
       className={`fixed w-screen z-30 transition duration-300 ease-in-out ${
-        isScrolled ? "bg-dark backdrop-blur-xl shadow-lg" : "opacity-0 pointer-events-none"
+        isScrolled ? "bg-primary backdrop-blur-xl shadow-lg" : ""
       }`}
     >
       <div className={``}>
