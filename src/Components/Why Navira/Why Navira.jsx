@@ -34,8 +34,8 @@ function Vision() {
         <div className="flex flex-wrap gap-10 min-[790px]:justify-center min-[790px]:gap-14 text-center min-[1000px]:text-start min-[1000px]:justify-start min-[1230px]:gap-12 ">
 
           <div className='flex flex-col pt-5 w-fit min-[790px]:w-[35%] min-[1000px]:w-[40%] min-[1230px]:w-[45%]'>
-            <h1 className='pb-5 text-2xl' data-aos="fade-up" data-aos-duration="700">Talk Sessions</h1>
-            <p data-aos="fade-up" className='text-justify text-pretty' data-aos-duration="700">"The ethereal glow of twilight cast a mesmerizing spell over the tranquil landscape. A symphony of crickets and frogs played in harmony, creating a soothing melody that echoed through the air.</p>
+            <h1 className='pb-5 text-2xl' data-aos="fade-up" data-aos-duration="700">Group Discussion</h1>
+            <p data-aos="fade-up" className='text-justify text-pretty' data-aos-duration="700">Navira brings a great opportunity for participants to network and communicate with each other through the Group Discussion Session handled by skilled professionals. It will be an extraordinary platform to explore and express their intellect.</p>
           </div>
 
           <div className='flex flex-col pt-5 w-fit min-[790px]:w-[35%] min-[1000px]:w-[40%] min-[1230px]:w-[45%]'>

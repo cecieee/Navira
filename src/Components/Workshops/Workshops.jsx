@@ -15,7 +15,7 @@ const cardList = [
   {
     img: _01,
     title: "Blockchain",
-    desc: "Our passionate, proffesional and knowledgeable team",
+    desc: "Navira; Journey Beyond Limits introduces workshop on Blockchain for the participants to explore the functionality of decentralized systems, secure data management, and real-world applications in industries like finance and  supply chain.",
     delay: "0",
     hover_img: _01_hover,
     classname: "pb-7",
@@ -23,7 +23,7 @@ const cardList = [
   {
     img: _02,
     title: "Beck N Protocol",
-    desc: "Utilize every square inch of space with convenitent",
+    desc: "Beckn Protocol is a framework that aims to smoothen the interaction between buyers and sellers in digital services. Navira; Journey Beyond Limits brings an opportunity to navigate through the concepts of this structure and it's possibilities.",
     delay: "100",
     hover_img: _02_hover,
     classname: "pb-7",
@@ -31,7 +31,7 @@ const cardList = [
   {
     img: _03,
     title: "Sensor Integration and IOT development",
-    desc: "Personalise your bath space with classic smooth,and stylish",
+    desc: "The efficacy in transmitting and receiving real-time data is crucial in applications where timely and accurate information is essential. The workshop on Sensor Integration and IoT by Navira offers an opportunity to enhance skills in sensor integration and IoT solution development.",
     delay: "200",
     hover_img: _03_hover,
     classname: "",
