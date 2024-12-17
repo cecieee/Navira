@@ -26,7 +26,7 @@ export const TracingBeam = ({
     stiffness: 500,
     damping: 90,
   });
-  const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]), {
+  const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [50, svgHeight - 300]), {
     stiffness: 500,
     damping: 90,
   });
@@ -39,7 +39,7 @@ export const TracingBeam = ({
        
         <svg
           viewBox={`0 0 20 ${svgHeight}`}
-          width="20"
+          width="30"
           // Set the SVG height
           height={svgHeight}
           className=" ml-4 block"

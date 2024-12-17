@@ -17,6 +17,7 @@ import Organizer from "./Components/Organizers/Organizers.jsx";
 import Loading from "./Components/Loading/Loading.jsx";
 import { TracingBeam } from "./Components/ui/Tracing-Beam.jsx";
 import { HeroParallax } from "./Components/ui/Hero-Parallax.jsx";
+import Countdown from "./Components/Countdown.jsx";
 
 if (window.innerWidth > 767)
   AOS.init({
@@ -144,6 +145,9 @@ function App() {
         <TracingBeam>
           <div className="relative">
             <About />
+            <div className="w-screen">
+              <Countdown />
+            </div>
             <Organizer />
             <Products />
             <Vision />

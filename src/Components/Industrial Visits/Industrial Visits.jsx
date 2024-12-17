@@ -58,7 +58,7 @@ function Card({ img1, img2, title, desc, delay }) {
   // )
   return (
     <>
-      <div className="w-[45vh] relative h-[60vh] group overflow-hidden  cursor-pointer border-secondary flex flex-col">
+      <div className="w-[45vh] relative h-[60vh] group overflow-hidden cursor-pointer border-secondary flex flex-col">
         <div className="relative z-0 w-full h-full">
           <img
             src={db}
@@ -67,7 +67,7 @@ function Card({ img1, img2, title, desc, delay }) {
           />
         </div>
         <div
-          className="w-full bg-secondary flex flex-col  h-[16vh] absolute group-hover:justify-center duration-200 group-hover:h-[40vh] transition-all bottom-0 z-10 pt-10 px-5"
+          className="w-full bg-secondary flex flex-col text-primary h-[16vh] absolute group-hover:justify-center duration-200 group-hover:h-[40vh] transition-all bottom-0 z-10 pt-10 px-5"
           style={{
             clipPath: "polygon(34% 0, 100% 24%, 100% 100%, 0 100%, 0 21%)",
           }}>
