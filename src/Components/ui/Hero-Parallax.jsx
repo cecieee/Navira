@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import CTA from "../CTA";
 
 export const HeroParallax = ({
   products
@@ -58,15 +59,19 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     (<div
-      className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-xl md:text-8xl font-bold">
-        NAVIRA
-      </h1>
+      className="max-w-7xl z-50 relative mx-auto py-20 md:py-40 px-4 w-full flex flex-col gap-5  left-0 top-0">
+      <div>
+          <h1 className="text-xl md:text-9xl font-bold font-heading">
+            NAVIRA
+          </h1>
+          <p className="text-2xl text-secondary font-heading">18 - 19 January 2025 | CE Chengannur</p>
+      </div>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
         We build beautiful products with the latest technologies and frameworks.
         We are a team of passionate developers and designers that love to build
         amazing products.
       </p>
+    <CTA width="250px" height="40px" />
     </div>)
   );
 };

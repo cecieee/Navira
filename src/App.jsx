@@ -140,11 +140,9 @@ function App() {
       {/* {loading && <Loading />} */}
       <div className=" relative text-white antialiased  App bg-primary">
         <Navbar />
+        <HeroParallax products={products} />
         <TracingBeam>
           <div className="relative">
-            <div className="w-screen">
-              <HeroParallax products={products} />
-            </div>
             <About />
             <Organizer />
             <Products />

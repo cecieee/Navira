@@ -5,6 +5,8 @@ import IEEE_LOGO from "../../assets/Logos/IEEE-logo-WHITE.png";
 import IEEE_SB_LOGO from "../../assets/Logos/ieee_sb_cec_logo_white.png";
 import WIE_LOGO from "../../assets/Logos/wie-WHITE.png";
 import IAS_LOGO from "../../assets/Logos/ias-png-white.png";
+import Foundation_Logo from "../../assets/Logos/foundation.png";
+import YP_Logo from "../../assets/Logos/YP.png";
 
 export default function Organizer() {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,7 +42,9 @@ export default function Organizer() {
         <img src={IEEE_LOGO} alt="" className="w-[10vw]" />
         <img src={IEEE_SB_LOGO} alt=""  className="w-[13vw]"/>
         <img src={WIE_LOGO} alt="" className="w-[5vw]"/>
-        <img src={IAS_LOGO} alt="" className="w-[8vw]"/>
+        <img src={IAS_LOGO} alt="" className="w-[8vw]" />
+        <img src={YP_Logo} alt="" className="w-[5vw]" />
+        <img src={Foundation_Logo} alt="" className="w-[10vw]" />
       </div>
     </div>
   );
