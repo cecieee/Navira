@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from "react";
 
 import Gallery from "../../Pages/Gallery/Gallery";
 import _01 from "../../assets/01.svg";
@@ -7,8 +7,7 @@ import _03 from "../../assets/03.svg";
 import _01_hover from "../../assets/01_hover.svg";
 import _02_hover from "../../assets/02_hover.svg";
 import _03_hover from "../../assets/03_hover.svg";
-import "./Why Navira.css"
-
+import "./Why Navira.css";
 
 import { Link } from "react-router-dom";
 
@@ -19,6 +18,7 @@ const cardList = [
     desc: "Our passionate, proffesional and knowledgeable team",
     delay: "0",
     hover_img: _01_hover,
+    classname: "pb-7",
   },
   {
     img: _02,
@@ -26,6 +26,7 @@ const cardList = [
     desc: "Utilize every square inch of space with convenitent",
     delay: "100",
     hover_img: _02_hover,
+    classname: "pb-7",
   },
   {
     img: _03,
@@ -33,10 +34,11 @@ const cardList = [
     desc: "Personalise your bath space with classic smooth,and stylish",
     delay: "200",
     hover_img: _03_hover,
+    classname: "",
   },
 ];
 // data-aos='fade-left' data-aos-duration='200' data-aos-delay={delay}
-function Card({ img, title, desc, delay, hover_img }) {
+function Card({ img, title, desc, delay, hover_img, classname }) {
   return (
     <>
       <div
@@ -52,7 +54,11 @@ function Card({ img, title, desc, delay, hover_img }) {
             className="absolute w-24 max-[1240px]:w-20 transition-all duration-500 opacity-0 group-hover:opacity-100"
           />
         </div>
-        <p className="pl-3 text-[1.5vw] font-semibold max-[1100px]:text-[1.7vw] max-[890px]:text-[2.5vw] max-[450px]:text-[6vw]">
+        <p
+          className={
+            "pl-3 text-[1.5vw] font-semibold max-[1100px]:text-[1.7vw] max-[890px]:text-[2.5vw] max-[450px]:text-[6vw] " +
+            classname
+          }>
           {title}
         </p>
         <p className="pl-3 text-[1vw] text-pretty max-[890px]:text-[1.6vw] max-[450px]:text-[3vw]">
@@ -73,23 +79,23 @@ function Card({ img, title, desc, delay, hover_img }) {
 }
 
 function Products() {
-    const [isVisible, setIsVisible] = useState(false);
-    const elementRef = useRef(null);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        if (elementRef.current) {
-          const top = elementRef.current.getBoundingClientRect().top;
-          const windowHeight = window.innerHeight;
-          setIsVisible(top < windowHeight);
-        }
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+  const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (elementRef.current) {
+        const top = elementRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        setIsVisible(top < windowHeight);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
       className="flex flex-col w-screen p-20 max-[920px]:p-5 h-fit max-[1100px]:p-10"
@@ -97,18 +103,23 @@ function Products() {
       <h1 className="text-4xl font-bold text-secondary font-heading">
         Workshops
       </h1>
-      <span ref={elementRef} className={`bg-secondary  h-1 rounded-full mt-1 transition-all delay-150 duration-1000 ease  ${isVisible ? 'w-[16%]' : 'w-[0%]'}`}></span>
+      <span
+        ref={elementRef}
+        className={`bg-secondary  h-1 rounded-full mt-1 transition-all delay-150 duration-1000 ease  ${
+          isVisible ? "w-[16%]" : "w-[0%]"
+        }`}></span>
 
       <div className=" w-fit h-fit my-10 flex max-[1100px]:self-center max-[930px]:gap-3 justify-center gap-5 flex-wrap max-[1024px]:w-full ">
         {cardList.map((item, index) => (
-            <Card
-              key={index}
-              img={item.img}
-              title={item.title}
-              desc={item.desc}
-              delay={item.delay}
-              hover_img={item.hover_img}
-            />
+          <Card
+            key={index}
+            img={item.img}
+            title={item.title}
+            desc={item.desc}
+            delay={item.delay}
+            hover_img={item.hover_img}
+            classname={item.classname}
+          />
         ))}
       </div>
     </div>
