@@ -17,7 +17,6 @@ const cardList = [
     img: _01,
     title: "Blockchain",
     desc: "Our passionate, proffesional and knowledgeable team",
-    link: "/gallery/kitchen",
     delay: "0",
     hover_img: _01_hover,
   },
@@ -25,7 +24,6 @@ const cardList = [
     img: _02,
     title: "Beck N Protocol",
     desc: "Utilize every square inch of space with convenitent",
-    link: "/gallery/wardrobes",
     delay: "100",
     hover_img: _02_hover,
   },
@@ -33,7 +31,6 @@ const cardList = [
     img: _03,
     title: "Sensor Integration and IOT development",
     desc: "Personalise your bath space with classic smooth,and stylish",
-    link: "/gallery/vanities",
     delay: "200",
     hover_img: _03_hover,
   },
@@ -96,7 +93,7 @@ function Products() {
   return (
     <div
       className="flex flex-col w-screen p-20 max-[920px]:p-5 h-fit max-[1100px]:p-10"
-      id="products">
+      id="workshops">
       <h1 className="text-4xl font-bold text-secondary font-heading">
         Workshops
       </h1>
@@ -104,7 +101,6 @@ function Products() {
 
       <div className=" w-fit h-fit my-10 flex max-[1100px]:self-center max-[930px]:gap-3 justify-center gap-5 flex-wrap max-[1024px]:w-full ">
         {cardList.map((item, index) => (
-          <Link to={item.link} key={index}>
             <Card
               key={index}
               img={item.img}
@@ -113,7 +109,6 @@ function Products() {
               delay={item.delay}
               hover_img={item.hover_img}
             />
-          </Link>
         ))}
       </div>
     </div>

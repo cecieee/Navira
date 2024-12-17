@@ -5,7 +5,7 @@ import { CiMail } from "react-icons/ci";
 function Footer() {
   return (
     <>
-      <footer className="w-screen h-fit bg-dark flex justify-center flex-col items-center text-[#9ca3af] p-3">
+      <footer className="w-screen h-fit flex bg-primary justify-center flex-col items-center text-[#9ca3af] p-3">
         <img src={Logo} alt="" className="w-24 pt-8 pb-5"/>
         {/* <p className="text-lg font-semibold font-heading">NAVIRA</p> */}
         <span className="flex items-center gap-2 text-sm max-[425px]:flex-wrap max-[425px]:justify-center"><FaPhone />Phone: +919249986650<CiMail />Email: navira@cecieee.org</span>

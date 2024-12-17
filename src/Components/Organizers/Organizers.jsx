@@ -25,7 +25,7 @@ export default function Organizer() {
     };
   }, []);
   return (
-    <div className="flex flex-col items-center justify-center w-full p-10 py-14 h-fit">
+    <div className="flex flex-col items-center justify-center w-screen p-10 py-14 h-fit">
       <div className="flex flex-col justify-center w-full mb-10">
         <span className="mb-3 text-5xl font-bold text-center font-heading text-secondary">
           Organisers

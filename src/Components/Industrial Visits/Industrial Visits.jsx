@@ -65,7 +65,7 @@ function Whyus() {
 
   
   return (
-    <div className='flex flex-col w-screen p-20 max-[920px]:p-5 h-fit max-[1100px]:p-10'>
+    <div className='flex flex-col w-screen p-20 max-[920px]:p-5 h-fit max-[1100px]:p-10' id='Industrial visit'>
       <div className='flex flex-col justify-center w-full mb-20 '>
         <span className='mb-3 text-5xl font-bold text-center font-heading text-secondary'>Industrial Visits</span>
         <span ref={elementRef} className={`bg-secondary w-[30vh] h-1 rounded-full mt-1 ${isVisible ? 'animate1' : ''}`}></span>
