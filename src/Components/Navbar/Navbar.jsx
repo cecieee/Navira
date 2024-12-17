@@ -63,33 +63,35 @@ function Navbar() {
         isScrolled ? "bg-dark backdrop-blur-xl shadow-lg" : "opacity-0 pointer-events-none"
       }`}
     >
-      <div className={`sm:px-6`}>
+      <div className={``}>
         <div className="flex items-center w-screen justify-between h-20 max-[767px]:h-16 max-[767px]:w-[90vw]">
-          <div className="flex items-center w-screen">
-            <div className="flex-shrink-0 w-[20%]">
+          <div className="flex items-center justify-around grow">
+            <div className="flex-shrink-0 ">
               <img
-                className=" w-28 ml-20 max-[767px]:h-12 max-[767px]:w-12 max-[767px]:ml-12 cursor-pointer"
+                className=" w-28 max-[767px]:h-12 max-[767px]:w-12 max-[767px]:ml-12 cursor-pointer"
                 src={Logo}
                 alt="Workflow"
                 onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
               />
             </div>
-            <div className="hidden grow  md:block">
-              <div className="w-[90%] flex justify-end space-x-7">
-                {sectionIds.map((id) => (
-                  <a
-                    onClick={(event) => handleItemClick(id, event)}
-                    className={`text-secondary  cursor-pointer  px-3 py-2 rounded-md text-sm font-semibold 
-                        ? "bg-secondary text-white"
-                        : ""
-                    }`}
-                  >
-                    {id.toUpperCase()}
-                  </a>
-                ))}
+            <div>
+              <div className="hidden grow md:block">
+                  <div className="flex gap-8">
+                    {sectionIds.map((id) => (
+                      <a
+                        onClick={(event) => handleItemClick(id, event)}
+                        className={`text-secondary  cursor-pointer  px-3 py-2 rounded-md text-sm font-semibold
+                            ? "bg-secondary text-white"
+                            : ""
+                        }`}
+                      >
+                        {id.toUpperCase()}
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="w-[10%]">
+            <div className="">
               <CTA />
             </div>
           </div>
