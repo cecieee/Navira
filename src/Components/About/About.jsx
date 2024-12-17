@@ -5,7 +5,7 @@ import "./About.css";
 
 function About() {
   const about =
-    "Daksha is a two-day all kerala technical event powered by IEEE Women In Engineering Affinity Group, College of Engineering Chengannur. The event, being a Technical Colloquium for both girls and boys, focuses on escalating their technical expertise and enabling networking and socializing with fellow participants from various engineering colleges across Kerala. The program looks forward to building a trailblazing platform for the student leaders to interact across regions to share their knowledge, find their best applications, cultivate different ideas and much more.";
+    "Navira: Journey Beyond Limits, an all-Kerala event by IEEE Women in Engineering Affinity Group College of Engineering Chengannur(WIE AG CEC), and IEEE Industry Applications Society Student Branch Chapter College of Engineering Chengannur (IAS SBC CEC), emerges as a perfect platform to blend knowledge, creativity, and innovation. Navira is the combined successor to the flagship events Daksha and Emergence, conducted in previous years by IEEE WIE AG CEC and IEEE IAS SBC CEC. It promises to deliver an inexplicable experience through the fusion of unparalleled vision and elegance.";
 
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);

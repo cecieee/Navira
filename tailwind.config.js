@@ -10,8 +10,8 @@ export default {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         tertiary: "var(--color-tertiary)",
-        quaternary: "var(--color-quaternary)",
-        dark: "var(--color-dark)",
+        // quarternery: "var(--color-quaternary)",
+        // dark: "var(--color-dark)",
       },
       backgroundImage: {
         kitchen: "url('src/assets/kitchen9.png')",
