@@ -14,6 +14,7 @@ function CTA({
         height: height,
         width: width,
       }}
+      onClick={() => window.open("https://www.yepdesk.com/navira/private/2isbt0kf7l")}
     >
       <div className=" grow text-center select-none text-sm font-semibold ">{text}</div>
       <div

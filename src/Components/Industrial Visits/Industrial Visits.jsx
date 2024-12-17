@@ -105,7 +105,7 @@ function Whyus() {
       className="flex flex-col w-screen p-20 max-[920px]:p-5 h-fit max-[1100px]:p-10"
       id="Industrial visit">
       <div className="flex flex-col justify-center w-full mb-20 ">
-        <span className="mb-3 text-5xl font-bold text-center font-heading text-secondary">
+        <span className="mb-3 text-4xl font-bold text-center font-heading text-secondary">
           Industrial Visits
         </span>
         <span

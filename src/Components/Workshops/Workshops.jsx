@@ -47,12 +47,13 @@ function Card({ img, title, desc, delay, hover_img, classname, cardpadding }) {
     <>
       <div
         className={
-          "group w-[20vw] max-[890px]:w-[40vw] min-w-[200px]  self-stretch   max-[1240px]:py-10 max-[1240px]:gap-7 max-[1100px]:p-3 max-[1100px]:py-5 max-[450px]:w-[80vw] overflow-hidden text-white relative bg-quarternery h-full flex-1 p-6 py-14 flex flex-col gap-10 max-[1420px]:gap-8 cursor-pointer hover:scale-105 transision-all  duration-200 hover:shadow-2xl shadow-black " +
+          "group w-[20vw] max-[890px]:w-[40vw] min-w-[200px] grow max-[1240px]:py-10 max-[1240px]:gap-7 max-[1100px]:p-3 max-[1100px]:py-5 max-[450px]:w-[80vw] overflow-hidden text-white relative bg-quarternery h-full flex-1 p-6 py-14 flex flex-col gap-10 max-[1420px]:gap-8 cursor-pointer hover:scale-105 transision-all  duration-200 hover:shadow-2xl shadow-black " +
           cardpadding
         }
         data-aos="fade-left"
         data-aos-duration="200"
-        data-aos-delay={delay}>
+        data-aos-delay={delay}
+      >
         <div className="relative w-24 h-20">
           <img src={img} alt="" className="absolute w-24 max-[1240px]:w-20" />
           <img
@@ -65,7 +66,8 @@ function Card({ img, title, desc, delay, hover_img, classname, cardpadding }) {
           className={
             "pl-3 text-[1.5vw] font-semibold max-[1100px]:text-[1.7vw] max-[890px]:text-[2.5vw] max-[450px]:text-[6vw] " +
             classname
-          }>
+          }
+        >
           {title}
         </p>
         <p className="pl-3 text-[1vw] text-pretty max-[890px]:text-[1.6vw] max-[450px]:text-[3vw]">
@@ -106,17 +108,21 @@ function Products() {
   return (
     <div
       className="flex flex-col w-screen p-20 max-[920px]:p-5 h-fit max-[1100px]:p-10"
-      id="workshops">
-      <h1 className="text-4xl font-bold text-secondary font-heading">
-        Workshops
-      </h1>
-      <span
-        ref={elementRef}
-        className={`bg-secondary  h-1 rounded-full mt-1 transition-all delay-150 duration-1000 ease  ${
-          isVisible ? "w-[16%]" : "w-[0%]"
-        }`}></span>
+      id="workshops"
+    >
+      <div className="flex flex-col justify-center w-full mb-20 ">
+        <span className="mb-3 text-4xl font-bold text-center font-heading text-secondary">
+          Workshops
+        </span>
+        <span
+          ref={elementRef}
+          className={`bg-secondary w-[30vh] h-1 rounded-full mt-1 ${
+            isVisible ? "animate1" : ""
+          }`}
+        ></span>
+      </div>
 
-      <div className=" w-fit h-fit my-10 items-stretch flex max-[1100px]:self-center max-[930px]:gap-3 justify-center gap-5 flex-wrap max-[1024px]:w-full ">
+      <div className=" w-full h-fit my-10 items-stretch flex max-[1100px]:self-center max-[930px]:gap-3 justify-center gap-5 flex-wrap max-[1024px]:w-full ">
         {cardList.map((item, index) => (
           <Card
             key={index}

@@ -72,7 +72,7 @@ const Countdown = () => {
   return (
       <div className="mb-20 max-[450px]:my-0 font-heading">
           <div className="flex flex-col justify-center w-full mb-10">
-        <span className="mb-3 text-5xl font-bold text-center font-heading text-secondary">
+        <span className="mb-3 text-4xl font-bold text-center font-heading text-secondary">
           Countdown
         </span>
         <span
@@ -84,7 +84,7 @@ const Countdown = () => {
       <div className="flex flex-col items-center justify-center w-full h-50% gap-8 sm:gap-16" data-aos="fade-in" data-aos-duration="1000">
         <span className="text-2xl sm:text-3xl font-semibold text-[#db5237] text-center tracking-widest px-2">
         </span>
-        <div className="flex gap-3 sm:gap-10">
+        <div className="flex gap-3 lg:gap-10">
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] border-4 border-secondary rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full "></div>
@@ -97,7 +97,7 @@ const Countdown = () => {
               {countDownTime?.days === 1 ? "Day" : "Days"}
             </span>
           </div>
-          <h1 className="text-9xl text-secondary">:</h1>
+          <h1 className="text-9xl text-secondary max-sm:hidden">:</h1>
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] border-4 border-secondary rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full "></div>
@@ -110,7 +110,7 @@ const Countdown = () => {
               {countDownTime?.hours === 1 ? "Hour" : "Hours"}
             </span>
           </div>
-          <h1 className="text-9xl text-secondary">:</h1>
+          <h1 className="text-9xl text-secondary max-sm:hidden">:</h1>
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] border-4 border-secondary rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full "></div>
@@ -123,7 +123,7 @@ const Countdown = () => {
               {countDownTime?.minutes === 1 ? "Minute" : "Minutes"}
             </span>
           </div>
-          <h1 className="text-9xl text-secondary">:</h1>
+          <h1 className="text-9xl text-secondary max-sm:hidden">:</h1>
           <div className="flex flex-col gap-5 relative">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] border-4 border-secondary rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full "></div>

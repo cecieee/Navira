@@ -7,6 +7,7 @@ import WIE_LOGO from "../../assets/Logos/wie-WHITE.png";
 import IAS_LOGO from "../../assets/Logos/ias-png-white.png";
 import Foundation_Logo from "../../assets/Logos/foundation.png";
 import YP_Logo from "../../assets/Logos/YP.png";
+import JT_Logo from "../../assets/Logos/jt-logo.png";
 
 export default function Organizer() {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,8 +29,8 @@ export default function Organizer() {
   }, []);
   return (
     <div className="flex flex-col items-center justify-center w-screen p-10 py-14 h-fit">
-      <div className="flex flex-col justify-center w-full mb-10">
-        <span className="mb-3 text-5xl font-bold text-center font-heading text-secondary">
+      <div className="flex flex-col justify-center w-full mb-20">
+        <span className="mb-3 text-4xl font-bold text-center font-heading text-secondary">
           Organisers
         </span>
         <span
@@ -45,6 +46,7 @@ export default function Organizer() {
         <img src={IAS_LOGO} alt="" className="w-[8vw]" />
         <img src={YP_Logo} alt="" className="w-[5vw]" />
         <img src={Foundation_Logo} alt="" className="w-[10vw]" />
+        <img src={JT_Logo} alt="" className="w-[10vw]" />
       </div>
     </div>
   );

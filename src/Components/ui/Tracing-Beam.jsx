@@ -35,7 +35,7 @@ export const TracingBeam = ({
     (<motion.div
       ref={ref}
       className={cn("relative w-full max-w-4xl  h-full", className)}>
-      <div className="absolute  top-3">
+      <div className="absolute max-lg:hidden top-3">
        
         <svg
           viewBox={`0 0 20 ${svgHeight}`}
