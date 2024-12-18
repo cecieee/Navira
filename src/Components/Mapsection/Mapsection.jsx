@@ -10,7 +10,7 @@ function Mapsection() {
     <div
       id="Contact"
       className=" relative flex h-fit min-h-[35vh] text-white font-heading bg-right bg-cover bg-no-repeat max-[950px]:min-h-fit "
-      style={{ backgroundImage: `url('${Map1}')` }}>
+      style={{ backgroundImage: `url('${Map2}')` }}>
       <div className="absolute w-full h-full bg-gradient-to-r from-dark via-dark to-transparent z-0 max-[950px]:bg-black"></div>
       {/* eslint-disable-next-line*/}
       <a
@@ -36,7 +36,7 @@ function Mapsection() {
           {/* <div className="absolute bottom-0 w-full bg-gradient-to-b from-black to-transparent"></div> */}
           {/* eslint-disable-next-line*/}
           <a href={Map_link} className="absolute z-10 block w-full h-full"></a>
-          <img src={Map2} alt="" className="relative z-10 w-full " />
+          <img src={Map1} alt="" className="relative z-10 w-full " />
         </div>
       </div>
     </div>
