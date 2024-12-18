@@ -18,10 +18,11 @@ import Loading from "./Components/Loading/Loading.jsx";
 import { TracingBeam } from "./Components/ui/Tracing-Beam.jsx";
 import { HeroParallax } from "./Components/ui/Hero-Parallax.jsx";
 import Countdown from "./Components/Countdown.jsx";
-import Photo1 from "../src/assets/Images/photo1.png"
-import Photo2 from "../src/assets/Images/photo2.png"
-import Photo3 from "../src/assets/Images/photo3.png"
-import Photo4 from "../src/assets/Images/photo4.png"
+import Photo1 from "../src/assets/Images/photo1.png";
+import Photo2 from "../src/assets/Images/photo2.png";
+import Photo3 from "../src/assets/Images/photo3.png";
+import Photo4 from "../src/assets/Images/photo4.png";
+import { BackgroundBeams } from "./Components/ui/Background-Beams.jsx";
 
 if (window.innerWidth > 767)
   AOS.init({
@@ -53,75 +54,75 @@ function App() {
     {
       title: "Cursor",
       link: "https://cursor.so",
-      thumbnail:Photo2
+      thumbnail: Photo2,
     },
     {
       title: "Rogue",
       link: "https://userogue.com",
-      thumbnail: Photo3
+      thumbnail: Photo3,
     },
-   
+
     {
       title: "Editorially",
       link: "https://editorially.org",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
     {
       title: "Editrix AI",
       link: "https://editrix.ai",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
     {
       title: "Pixel Perfect",
       link: "https://app.pixelperfect.quest",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
-   
+
     {
       title: "Algochurn",
       link: "https://algochurn.com",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
     {
       title: "Aceternity UI",
       link: "https://ui.aceternity.com",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
     {
       title: "Tailwind Master Kit",
       link: "https://tailwindmasterkit.com",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
     {
       title: "SmartBridge",
       link: "https://smartbridgetech.com",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
     {
       title: "Renderwork Studio",
       link: "https://renderwork.studio",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
-   
+
     {
       title: "Creme Digital",
       link: "https://cremedigital.com",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
     {
       title: "Golden Bells Academy",
       link: "https://goldenbellsacademy.com",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
     {
       title: "Invoker Labs",
       link: "https://invoker.lol",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
     {
       title: "E Free Invoice",
       link: "https://efreeinvoice.com",
-      thumbnail: Photo4
+      thumbnail: Photo4,
     },
   ];
 

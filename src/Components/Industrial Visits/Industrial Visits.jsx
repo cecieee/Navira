@@ -48,23 +48,25 @@ function Card({ img1, title, desc, delay }) {
   // )
   return (
     <>
-      <div className="w-[45vh] relative h-[60vh] group overflow-hidden cursor-pointer border-secondary flex flex-col">
-        <div className="relative z-0 w-full h-full">
-          <img
-            src={db}
-            alt=""
-            className="transition-all group-hover:scale-105"
-          />
-        </div>
-        <div
-          className="w-full bg-secondary flex flex-col text-primary h-[16vh] absolute group-hover:justify-center max-sm:justify-center duration-200 max-sm:h-[40vh] group-hover:h-[40vh] transition-all bottom-0 z-10 pt-10 px-5"
-          style={{
-            clipPath: "polygon(34% 0, 100% 24%, 100% 100%, 0 100%, 0 21%)",
-          }}>
-          <h3 className="text-2xl font-heading">{title}</h3>
-          <p className="transition-opacity opacity-0 group-hover:opacity-100 max-sm:opacity-100">
-            {desc}
-          </p>
+      <div className="w-[45vh] ivcard relative h-[60vh] group overflow-hidden cursor-pointer border-secondary flex flex-col transition-transform ease-in-out duration-500" >
+        <div className="h-full w-full group-hover:scale-110 transition ease-in-out duration-500" style={{ background: `url(${img1})`, backgroundPosition: "center"}}>
+          <div className="relative z-0 w-full h-full">
+            {/* <img
+              src={db}
+              alt=""
+              className="transition-all group-hover:scale-105"
+            /> */}
+          </div>
+          <div
+            className="w-full bg-secondary flex flex-col group-hover:scale-[96%] group-hover:mx-2 text-primary h-[16vh] absolute group-hover:justify-center max-sm:justify-center duration-200 max-sm:h-[40vh] group-hover:h-[40vh] transition-all bottom-0 z-10 pt-10 px-5"
+            style={{
+              clipPath: "polygon(34% 0, 100% 24%, 100% 100%, 0 100%, 0 21%)",
+            }}>
+            <h3 className="text-2xl font-heading">{title}</h3>
+            <p className="transition-opacity opacity-0 group-hover:opacity-100 max-sm:opacity-100">
+              {desc}
+            </p>
+          </div>
         </div>
       </div>
     </>
