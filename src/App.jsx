@@ -18,6 +18,7 @@ import Loading from "./Components/Loading/Loading.jsx";
 import { TracingBeam } from "./Components/ui/Tracing-Beam.jsx";
 import { HeroParallax } from "./Components/ui/Hero-Parallax.jsx";
 import Countdown from "./Components/Countdown.jsx";
+import Tickets from "./Components/Tickets/Tickets.jsx"
 import Photo1 from "../src/assets/Images/photo1.png"
 import Photo2 from "../src/assets/Images/photo2.png"
 import Photo3 from "../src/assets/Images/photo3.png"
@@ -128,7 +129,7 @@ function App() {
   return (
     <div className="overflow-x-hidden App">
       {/* {loading && <Loading />} */}
-      <div className=" relative text-white antialiased  App bg-primary">
+      <div className="relative antialiased text-white App bg-primary">
         <Navbar />
         <HeroParallax products={products} />
         <TracingBeam>
@@ -143,7 +144,8 @@ function App() {
             <Whyus />
           </div>
         </TracingBeam>
-        {/* <Mapsection /> */}
+        <Mapsection />
+        <Tickets />
       </div>
       <Footer />
     </div>
