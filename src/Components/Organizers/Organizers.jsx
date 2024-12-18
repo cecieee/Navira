@@ -31,7 +31,7 @@ export default function Organizer() {
     <div className="flex flex-col items-center justify-center w-screen p-10 py-14 h-fit">
       <div className="flex flex-col justify-center w-full mb-20">
         <span className="mb-3 text-4xl font-bold text-center font-heading text-secondary">
-          Organisers
+          Organizers
         </span>
         <span
           ref={elementRef}
@@ -40,13 +40,13 @@ export default function Organizer() {
           }`}></span>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-20">
-        <img src={IEEE_LOGO} alt="" className="w-[10vw]" />
-        <img src={IEEE_SB_LOGO} alt=""  className="w-[13vw]"/>
-        <img src={WIE_LOGO} alt="" className="w-[5vw]"/>
-        <img src={IAS_LOGO} alt="" className="w-[8vw]" />
-        <img src={YP_Logo} alt="" className="w-[5vw]" />
-        <img src={Foundation_Logo} alt="" className="w-[10vw]" />
-        <img src={JT_Logo} alt="" className="w-[10vw]" />
+        <img src={IEEE_LOGO} alt="" className="w-[10vw] max-sm:scale-[250%]" />
+        <img src={IEEE_SB_LOGO} alt=""  className="w-[13vw] max-sm:scale-[250%]"/>
+        <img src={WIE_LOGO} alt="" className="w-[5vw] max-sm:scale-[250%]"/>
+        <img src={IAS_LOGO} alt="" className="w-[8vw] max-sm:scale-[250%]" />
+        <img src={YP_Logo} alt="" className="w-[5vw] max-sm:scale-[250%]" />
+        <img src={Foundation_Logo} alt="" className="w-[10vw] max-sm:scale-[250%]" />
+        <img src={JT_Logo} alt="" className="w-[17vw] max-sm:scale-[250%]" />
       </div>
     </div>
   );

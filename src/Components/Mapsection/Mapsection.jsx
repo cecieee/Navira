@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/ABC_green.png";
+import logo from "../../assets/Images/photo1.png";
 
 function Mapsection() {
   return (

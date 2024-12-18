@@ -10,14 +10,18 @@ import Products from "./Components/Workshops/Workshops.jsx";
 import Vision from "./Components/Why Navira/Why Navira.jsx";
 import Whyus from "./Components/Industrial Visits/Industrial Visits.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom/dist";
-import Gallery from "./Pages/Gallery/Gallery.jsx";
+// import Gallery from "./Pages/Gallery/Gallery.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
-import Home from "./Components/Home/Home.jsx";
+// import Home from "./Components/Home/Home.jsx";
 import Organizer from "./Components/Organizers/Organizers.jsx";
 import Loading from "./Components/Loading/Loading.jsx";
 import { TracingBeam } from "./Components/ui/Tracing-Beam.jsx";
 import { HeroParallax } from "./Components/ui/Hero-Parallax.jsx";
 import Countdown from "./Components/Countdown.jsx";
+import Photo1 from "../src/assets/Images/photo1.png"
+import Photo2 from "../src/assets/Images/photo2.png"
+import Photo3 from "../src/assets/Images/photo3.png"
+import Photo4 from "../src/assets/Images/photo4.png"
 
 if (window.innerWidth > 767)
   AOS.init({
@@ -44,95 +48,80 @@ function App() {
     {
       title: "Moonbeam",
       link: "https://gomoonbeam.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      thumbnail: Photo1,
     },
     {
       title: "Cursor",
       link: "https://cursor.so",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      thumbnail:Photo2
     },
     {
       title: "Rogue",
       link: "https://userogue.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+      thumbnail: Photo3
     },
    
     {
       title: "Editorially",
       link: "https://editorially.org",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+      thumbnail: Photo4
     },
     {
       title: "Editrix AI",
       link: "https://editrix.ai",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      thumbnail: Photo4
     },
     {
       title: "Pixel Perfect",
       link: "https://app.pixelperfect.quest",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      thumbnail: Photo4
     },
    
     {
       title: "Algochurn",
       link: "https://algochurn.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      thumbnail: Photo4
     },
     {
       title: "Aceternity UI",
       link: "https://ui.aceternity.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      thumbnail: Photo4
     },
     {
       title: "Tailwind Master Kit",
       link: "https://tailwindmasterkit.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      thumbnail: Photo4
     },
     {
       title: "SmartBridge",
       link: "https://smartbridgetech.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+      thumbnail: Photo4
     },
     {
       title: "Renderwork Studio",
       link: "https://renderwork.studio",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+      thumbnail: Photo4
     },
    
     {
       title: "Creme Digital",
       link: "https://cremedigital.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      thumbnail: Photo4
     },
     {
       title: "Golden Bells Academy",
       link: "https://goldenbellsacademy.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+      thumbnail: Photo4
     },
     {
       title: "Invoker Labs",
       link: "https://invoker.lol",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+      thumbnail: Photo4
     },
     {
       title: "E Free Invoice",
       link: "https://efreeinvoice.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+      thumbnail: Photo4
     },
   ];
 

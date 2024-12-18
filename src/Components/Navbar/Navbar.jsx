@@ -63,12 +63,11 @@ function Navbar() {
         isScrolled ? "bg-primary backdrop-blur-xl shadow-lg" : ""
       }`}
     >
-      <div className={``}>
         <div className="flex items-center w-screen justify-between h-20 max-[767px]:h-16 max-[767px]:w-[90vw]">
           <div className="flex items-center justify-around grow">
             <div className="flex-shrink-0 ">
               <img
-                className=" w-28 max-[767px]:h-12 max-[767px]:w-12 max-[767px]:ml-12 cursor-pointer"
+                className=" w-28   cursor-pointer"
                 src={Logo}
                 alt="Workflow"
                 onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
@@ -92,7 +91,7 @@ function Navbar() {
                 </div>
               </div>
             <div className="">
-              <CTA />
+              {window.innerWidth > 768 && <CTA />}
             </div>
           </div>
           <div className="flex -mr-2 md:hidden">
@@ -135,10 +134,9 @@ function Navbar() {
             </button>
           </div>
         </div>
-      </div>
       <div className={`h-1 bg-secondary`} style={{ width: `${scrollPercentage}%` }} ></div>
       {isOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden bg-primary">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {sectionIds.map((id) => (
               <a

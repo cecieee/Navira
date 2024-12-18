@@ -1,12 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import db from "../../assets/kitchen10.png";
-import dw from "../../assets/dreamhome-w.png";
-import bb from "../../assets/budget-b.png";
-import bw from "../../assets/budget-w.png";
-import lb from "../../assets/lights-b.png";
-import lw from "../../assets/lights-w.png";
-import sb from "../../assets/space-b.png";
-import sw from "../../assets/space-w.png";
+import db from "../../assets/Images/photo1.png";
 
 import "./Industrial Visits.css";
 import { div } from "framer-motion/client";
@@ -14,28 +7,25 @@ import { div } from "framer-motion/client";
 const cardList = [
   {
     img1: db,
-    img2: dw,
     title: "Water Authority",
     delay: "0",
     desc: "The participants gain an in-depth understanding of the significance of sectoral ecosystems as Navira: Journey Beyond Limits provides them an opportunity to visit the Kerala Water Authority Sub Division Office, Tiruvalla.",
   },
   {
-    img1: lb,
-    img2: lw,
+    img1: db,
     title: "KSEB (220kV Substation)",
     delay: "200",
     desc: "The 220 KV substation in Edappon, operated by KSEB, plays a vital role in the region's power distribution network. With its advanced equipment and infrastructure, this substation ensures a dependable electricity supply to residential, commercial, and industrial areas",
   },
   {
-    img1: sb,
-    img2: sw,
+    img1: db,
     title: "ASAP Community Skill Park",
     delay: "300",
     desc: "The Electric Vehicle Center of Excellence at Kunnamthanam's ASAP Community Skill Park offers a unique chance to learn EV skills, from maintenance to infrastructure installation, for a sustainable transportation future",
   },
 ];
 
-function Card({ img1, img2, title, desc, delay }) {
+function Card({ img1, title, desc, delay }) {
   const [image, setImage] = useState(img1);
   // return (
   //   <div className=''>
@@ -67,12 +57,12 @@ function Card({ img1, img2, title, desc, delay }) {
           />
         </div>
         <div
-          className="w-full bg-secondary flex flex-col text-primary h-[16vh] absolute group-hover:justify-center duration-200 group-hover:h-[40vh] transition-all bottom-0 z-10 pt-10 px-5"
+          className="w-full bg-secondary flex flex-col text-primary h-[16vh] absolute group-hover:justify-center max-sm:justify-center duration-200 max-sm:h-[40vh] group-hover:h-[40vh] transition-all bottom-0 z-10 pt-10 px-5"
           style={{
             clipPath: "polygon(34% 0, 100% 24%, 100% 100%, 0 100%, 0 21%)",
           }}>
           <h3 className="text-2xl font-heading">{title}</h3>
-          <p className="transition-opacity opacity-0 group-hover:opacity-100">
+          <p className="transition-opacity opacity-0 group-hover:opacity-100 max-sm:opacity-100">
             {desc}
           </p>
         </div>
@@ -119,7 +109,6 @@ function Whyus() {
           <Card
             key={index}
             img1={item.img1}
-            img2={item.img2}
             title={item.title}
             delay={item.delay}
             desc={item.desc}

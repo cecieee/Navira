@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
-import k1 from '../../assets/Kitchen10.png'
-import w1 from '../../assets/wardrobe1.png'
+import k1 from '../../assets/Images/photo1.png'
+import w1 from '../../assets/Images/photo1.png'
 import './Why Navira.css';
 
 function Vision() {

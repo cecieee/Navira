@@ -1,6 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-
-import Gallery from "../../Pages/Gallery/Gallery";
 import _01 from "../../assets/01.svg";
 import _02 from "../../assets/02.svg";
 import _03 from "../../assets/03.svg";
