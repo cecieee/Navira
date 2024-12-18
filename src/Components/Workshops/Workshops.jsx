@@ -24,7 +24,7 @@ const cardList = [
   {
     img: _02,
     title: "Beck N Protocol",
-    desc: "Beckn Protocol is a framework that aims to smoothen the interaction between buyers and sellers in digital services. Navira; Journey Beyond Limits brings an opportunity to navigate through the concepts of this structure and it's possibilities.",
+    desc: "Beck N Protocol is a framework that aims to smoothen the interaction between buyers and sellers in digital services. Navira; Journey Beyond Limits brings an opportunity to navigate through the concepts of this structure and it's possibilities.",
     delay: "100",
     hover_img: _02_hover,
     classname: "pb-7",
