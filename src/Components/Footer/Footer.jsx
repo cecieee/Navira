@@ -12,8 +12,8 @@ function Footer() {
   return (
     <>
       <footer className="w-screen p-5 h-fit bg-primary">
-        <footer className="w-full h-fit  font-heading flex bg-primary justify-between items-center text-[#9ca3af]">
-          <div className="flex flex-col items-center gap-4 px-5">
+        <footer className="w-full h-fit max-[528px]:flex-col max-[528px]:gap-5 font-heading flex bg-primary justify-between items-center text-[#9ca3af]">
+          <div className="flex flex-col items-center gap-4 px-5 ">
             <img src={Logo} alt="" className="w-24" />
             {/* <div className="flex gap-2 ">
               <FaInstagram className="text-2xl hover:text-[#E1306C] cursor-pointer" />
@@ -37,7 +37,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex gap-3 ">
+          <div className="flex gap-3 max-[850px]:hidden">
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Workshops</a>
