@@ -144,7 +144,6 @@ function App() {
           </div>
         </TracingBeam>
         <Mapsection />
-        <Tickets />
       </div>
       <Footer />
     </div>
