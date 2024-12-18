@@ -1,24 +1,27 @@
 import React, { useRef, useEffect, useState } from "react";
 import db from "../../assets/Images/photo1.png";
+import IV1 from "../../assets/IV1.jpg"
+import IV2 from "../../assets/IV2.png"
+import IV3 from "../../assets/IV3.jpg"
 
 import "./Industrial Visits.css";
 import { div } from "framer-motion/client";
 
 const cardList = [
   {
-    img1: db,
+    img1: IV1,
     title: "Water Authority",
     delay: "0",
     desc: "The participants gain an in-depth understanding of the significance of sectoral ecosystems as Navira: Journey Beyond Limits provides them an opportunity to visit the Kerala Water Authority Sub Division Office, Tiruvalla.",
   },
   {
-    img1: db,
+    img1: IV2,
     title: "KSEB (220kV Substation)",
     delay: "200",
     desc: "The 220 KV substation in Edappon, operated by KSEB, plays a vital role in the region's power distribution network. With its advanced equipment and infrastructure, this substation ensures a dependable electricity supply to residential, commercial, and industrial areas",
   },
   {
-    img1: db,
+    img1: IV3,
     title: "ASAP Community Skill Park",
     delay: "300",
     desc: "The Electric Vehicle Center of Excellence at Kunnamthanam's ASAP Community Skill Park offers a unique chance to learn EV skills, from maintenance to infrastructure installation, for a sustainable transportation future",
@@ -49,7 +52,7 @@ function Card({ img1, title, desc, delay }) {
   return (
     <>
       <div className="w-[45vh] ivcard relative h-[60vh] group overflow-hidden cursor-pointer border-secondary flex flex-col transition-transform ease-in-out duration-500" >
-        <div className="h-full w-full group-hover:scale-110 transition ease-in-out duration-500" style={{ background: `url(${img1})`, backgroundPosition: "center"}}>
+        <div className="w-full h-full transition duration-500 ease-in-out bg-no-repeat group-hover:scale-110" style={{ background: `url(${img1})`, backgroundPosition: "center",backgroundRepeat:'no-repeat',backgroundSize:'cover' }}>
           <div className="relative z-0 w-full h-full">
             {/* <img
               src={db}
