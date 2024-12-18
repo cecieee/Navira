@@ -18,7 +18,6 @@ import Loading from "./Components/Loading/Loading.jsx";
 import { TracingBeam } from "./Components/ui/Tracing-Beam.jsx";
 import { HeroParallax } from "./Components/ui/Hero-Parallax.jsx";
 import Countdown from "./Components/Countdown.jsx";
-import Tickets from "./Components/Tickets/Tickets.jsx"
 import Photo1 from "../src/assets/Images/photo1.png"
 import Photo2 from "../src/assets/Images/photo2.png"
 import Photo3 from "../src/assets/Images/photo3.png"
