@@ -2,6 +2,7 @@
 import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import CTA from "../CTA";
+import Logo from "../../assets/Logos/Navira.jpg";
 
 export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
@@ -42,8 +43,7 @@ export const HeroParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-fit pt-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
-    >
+      className="h-fit pt-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -52,9 +52,8 @@ export const HeroParallax = ({ products }) => {
           translateY,
           opacity,
         }}
-        className=""
-      >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-10 mb-10">
+        className="">
+        <motion.div className="flex flex-row-reverse mb-10 space-x-10 space-x-reverse">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -63,7 +62,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-10 space-x-10 ">
+        <motion.div className="flex flex-row mb-10 space-x-10 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -72,7 +71,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-10">
+        <motion.div className="flex flex-row-reverse space-x-10 space-x-reverse">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -88,14 +87,17 @@ export const HeroParallax = ({ products }) => {
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl z-50 relative mx-auto pt-20 md:pt-40 px-4 w-full flex flex-col gap-5  left-0 top-0" id="home">
+    <div
+      className="relative top-0 left-0 z-50 flex flex-col w-full gap-5 px-4 pt-20 mx-auto max-w-7xl md:pt-40"
+      id="home">
       <div>
-        <h1 className="text-7xl md:text-9xl font-bold font-heading">NAVIRA</h1>
+        {/* <h1 className="font-bold text-7xl md:text-9xl font-heading">NAVIRA</h1> */}
+        <img src={Logo} alt="" />
         <p className="md:text-2xl text-secondary font-heading">
           18 - 19 January 2025 | CE Chengannur
         </p>
       </div>
-      <p className="max-w-2xl text-base md:text-xl mt-8 font-heading dark:text-neutral-200">
+      <p className="max-w-2xl mt-8 text-base md:text-xl font-heading dark:text-neutral-200">
         Navira: Journey Beyond Limits, an all-Kerala event by IEEE Women in
         Engineering Affinity Group College of Engineering Chengannur(WIE AG
         CEC), and IEEE Industry Applications Society Student Branch Chapter
@@ -116,13 +118,12 @@ export const ProductCard = ({ product, translate }) => {
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
-    >
+      className="group/product h-96 w-[30rem] relative flex-shrink-0">
       <img
         src={product.thumbnail}
         height="600"
         width="600"
-        className="object-cover object-left-top absolute h-full w-full inset-0"
+        className="absolute inset-0 object-cover object-left-top w-full h-full"
         alt={product.title}
       />
     </motion.div>
