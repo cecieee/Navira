@@ -8,10 +8,20 @@ import IAS_LOGO from "../../assets/Logos/ias-png-white.png";
 import Foundation_Logo from "../../assets/Logos/foundation.png";
 import YP_Logo from "../../assets/Logos/YP.png";
 import JT_Logo from "../../assets/Logos/jt-logo.png";
+import { img } from "framer-motion/client";
 
 export default function Organizer() {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
+  const Logos = [
+    IEEE_SB_LOGO,
+    WIE_LOGO,
+    IAS_LOGO,
+    Foundation_Logo,
+    YP_Logo,
+    JT_Logo,
+    IEEE_LOGO,
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,14 +49,17 @@ export default function Organizer() {
             isVisible ? "animate1" : ""
           }`}></span>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-20">
-        <img src={IEEE_LOGO} alt="" className="w-[10vw] max-sm:scale-[250%]" />
+      <div className="flex flex-wrap items-center justify-center gap-16">
+        {Logos.map((items, index) => (
+          <img src={items} className="h-12" />
+        ))}
+        {/* <img src={IEEE_LOGO} alt="" className="w-[10vw] max-sm:scale-[250%]" />
         <img src={IEEE_SB_LOGO} alt=""  className="w-[13vw] max-sm:scale-[250%]"/>
         <img src={WIE_LOGO} alt="" className="w-[5vw] max-sm:scale-[250%]"/>
         <img src={IAS_LOGO} alt="" className="w-[8vw] max-sm:scale-[250%]" />
         <img src={YP_Logo} alt="" className="w-[5vw] max-sm:scale-[250%]" />
         <img src={Foundation_Logo} alt="" className="w-[10vw] max-sm:scale-[250%]" />
-        <img src={JT_Logo} alt="" className="w-[17vw] max-sm:scale-[250%]" />
+        <img src={JT_Logo} alt="" className="w-[17vw] max-sm:scale-[250%]" /> */}
       </div>
     </div>
   );
