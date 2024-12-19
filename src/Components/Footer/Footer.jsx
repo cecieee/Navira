@@ -1,4 +1,4 @@
-import Logo from "../../assets/Logos/logo.png";
+import Logo from "../../assets/Logos/logo.svg";
 import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { BsInstagram, BsLinkedin, BsGlobe, BsFacebook } from "react-icons/bs";

@@ -111,7 +111,7 @@ export const Header = ({scrollYProgress}) => {
   // };
   const springConfig = { stiffness: 200, damping: 30}
   const scale = useSpring(useTransform(scrollYProgress, [0, 0.2], [1, 2]), springConfig);
-  const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [0, 500]), springConfig);
+  const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [0, 550]), springConfig);
   
 
   return (

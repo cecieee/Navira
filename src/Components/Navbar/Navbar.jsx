@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../../assets/Logos/logo.png";
+import Logo from "../../assets/Logos/logo.svg";
 import CTA from "../CTA";
 
 const sectionIds = ["home", "about", "workshops", "Industrial visit", "contact"]; // Add your section ids here

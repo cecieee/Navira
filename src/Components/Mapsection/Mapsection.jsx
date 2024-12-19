@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/Images/photo1.png";
+import logo from "../../assets/Images/photo1.webp";
 import CTA from "../CTA";
 import Map1 from "../../assets/Group 5.png";
 import Map2 from "../../assets/Group 1 (2).png";
