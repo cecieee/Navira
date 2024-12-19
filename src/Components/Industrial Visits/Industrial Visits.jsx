@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import db from "../../assets/Images/photo1.webp";
-import IV1 from "../../assets/IV1.jpg"
-import IV2 from "../../assets/IV2.png"
-import IV3 from "../../assets/IV3.jpg"
+import IV1 from "../../assets/IV1.webp";
+import IV2 from "../../assets/IV2.webp";
+import IV3 from "../../assets/IV3.webp";
 
 import "./Industrial Visits.css";
 import { div } from "framer-motion/client";
@@ -51,8 +51,15 @@ function Card({ img1, title, desc, delay }) {
   // )
   return (
     <>
-      <div className="w-[45vh] ivcard relative h-[60vh] group overflow-hidden cursor-pointer border-secondary flex flex-col transition-transform ease-in-out duration-500" >
-        <div className="w-full h-full transition duration-500 ease-in-out bg-no-repeat group-hover:scale-110" style={{ background: `url(${img1})`, backgroundPosition: "center",backgroundRepeat:'no-repeat',backgroundSize:'cover' }}>
+      <div className="w-[45vh] ivcard relative h-[60vh] group overflow-hidden cursor-pointer border-secondary flex flex-col transition-transform ease-in-out duration-500">
+        <div
+          className="w-full h-full transition duration-500 ease-in-out bg-no-repeat group-hover:scale-110"
+          style={{
+            background: `url(${img1})`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}>
           <div className="relative z-0 w-full h-full">
             {/* <img
               src={db}

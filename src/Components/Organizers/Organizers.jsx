@@ -14,13 +14,13 @@ export default function Organizer() {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
   const Logos = [
+    IEEE_LOGO,
     IEEE_SB_LOGO,
     WIE_LOGO,
     IAS_LOGO,
     Foundation_Logo,
     YP_Logo,
     JT_Logo,
-    IEEE_LOGO,
   ];
 
   useEffect(() => {
