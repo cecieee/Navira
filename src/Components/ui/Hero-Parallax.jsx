@@ -91,8 +91,8 @@ export const Header = () => {
       className="relative top-0 left-0 z-50 flex flex-col w-full gap-5 px-4 pt-20 mx-auto max-w-7xl md:pt-40"
       id="home">
       <div>
-        {/* <h1 className="font-bold text-7xl md:text-9xl font-heading">NAVIRA</h1> */}
-        <img src={Logo} alt="" />
+        <h1 className="font-bold text-7xl md:text-9xl font-heading">NAVIRA</h1>
+        {/* <img src={Logo} alt="" /> */}
         <p className="md:text-2xl text-secondary font-heading">
           18 - 19 January 2025 | CE Chengannur
         </p>
