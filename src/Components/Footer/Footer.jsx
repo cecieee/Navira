@@ -11,7 +11,7 @@ function Footer() {
   const linkedin_link = "https://www.linkedin.com/company/cecieee/";
   return (
     <>
-      <footer className="w-screen p-5 h-fit bg-dark">
+      <footer className="w-screen p-5 h-fit bg-dark" id="contact">
         <footer className="w-full h-fit max-[528px]:flex-col max-[528px]:gap-5 font-heading flex bg-dark justify-between items-center text-[#9ca3af]">
           <div className="flex flex-col items-center gap-4 px-5 ">
             <img src={Logo} alt="" className="w-24" />
@@ -38,10 +38,10 @@ function Footer() {
             </div>
           </div>
           <div className="flex gap-3 max-[850px]:hidden">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Workshops</a>
-            <a href="">Industrial Visit</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#workshops">Workshops</a>
+            <a href="#industrial visit">Industrial Visit</a>
           </div>
           <div className="flex flex-col items-start w-fit">
             <span className="flex items-start gap-2 text-sm max-[425px]:flex-wrap max-[425px]:justify-center">

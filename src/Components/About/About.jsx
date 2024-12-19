@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
-import k1 from "../../assets/Images/photo1.png";
-import w1 from "../../assets/Images/photo1.png";
+import k1 from "../../assets/Images/vol.webp";
+import w1 from "../../assets/Images/daksha.webp";
 import "./About.css";
 
 function About() {
@@ -27,10 +27,10 @@ function About() {
 
   return (
     <div
-      className="flex flex-wrap items-center w-screen pb-20 overflow-hidden h-fit "
+      className="flex flex-wrap gap-10 items-center w-screen overflow-hidden h-fit "
       id="about"
     >
-      <div className=" pt-20  px-3 w-fit flex flex-col items-center  min-[1000px]:h-screen min-[1000px]:w-1/3 min-[1000px]:mt-40 min-[1000px]:ml-5 min-[1000px]:mr-10 min-[1000px]:justify-center min-[767px]:visible max-[767px]:hidden">
+      <div className="px-3 w-fit flex flex-col items-center  min-[1000px]:h-screen min-[1000px]:w-1/3  min-[1000px]:ml-5 min-[1000px]:mr-10 min-[1000px]:justify-center min-[767px]:visible max-[767px]:hidden">
         <img
           className="w-full shadow-2xl min-[1000px]:min-w-72 min-[1000px]:translate-x-[10%] max-[767px]:w-[90%]  min-[767px]:visible"
           src={k1}
@@ -46,16 +46,16 @@ function About() {
       <div className="flex flex-col justify-start h-full ml-10 mr-10  min-[1000px]:w-[45%] min-[1000px]:ml-20">
         {/* <h1 className="text-secondary text-4xl font-heading w-full mt-10 min-[1000px]:text-start">About NAVIRA</h1> */}
 
-        <div className="  pt-10 px-3 w-fit flex flex-col items-center min-[1000px]:h-screen min-[1000px]:w-1/3 min-[1000px]:mt-40 min-[1000px]:ml-5 min-[1000px]:mr-10 min-[1000px]:justify-center min-[767px]:hidden">
+        {/* <div className=" px-3 w-fit flex flex-col  min-[1000px]:h-screen min-[1000px]:w-1/3 min-[1000px]:mt-40 min-[1000px]:ml-5 min-[1000px]:mr-10 min-[1000px]:justify-center min-[767px]:hidden">
           <img
             className="w-full shadow-2xl min-[1000px]:min-w-72 min-[1000px]:translate-x-[10%] max-[767px]:w-[90%]  min-[767px]:hidden"
             src={k1}
             alt=""
           />
-        </div>
+        </div> */}
 
         {/* <h1 className="flex w-full mt-5 text-3xl text-start " data-aos='flip-up' data-aos-duration="1000">We have the Right Solution</h1> */}
-        <h1 className="text-secondary text-4xl font-heading w-full mt-10 min-[1000px]:text-start">
+        <h1 className="text-secondary text-4xl font-heading w-full min-[1000px]:text-start">
           About NAVIRA
         </h1>
 

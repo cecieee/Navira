@@ -1,35 +1,23 @@
-.smart-glass {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  background: linear-gradient(90deg, var(--color-dark) 50%, var(--color-dark) 0) right/200% 50%;
+  animation: l21 3s infinite alternate-reverse;
+}
+.loader::before {
+  content: "NAVIRA";
+  color: transparent;
+  padding: 0 5px;
+  background: inherit;
+  background-image: linear-gradient(90deg, var(--color-secondary) 50%, var(--color-dark) 0);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
-.logo {
-  width: 300px;
-  height: 300px;
-  position: relative;
-}
-
-.circle {
-  padding: 20px;
-  border: 5px solid transparent;
-  border-top-color: #dfb479;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  animation: connect 2.5s linear infinite;
-}
-
-
-
-@keyframes connect {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
+@keyframes l21 {
+  0% { background-position: left; }
+  100% { background-position: right; }
 }

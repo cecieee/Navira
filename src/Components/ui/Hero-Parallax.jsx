@@ -42,7 +42,7 @@ export const HeroParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[270vh] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-fit pt-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -54,7 +54,7 @@ export const HeroParallax = ({ products }) => {
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-10 mb-10">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -63,7 +63,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row  mb-10 space-x-10 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -72,7 +72,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-10">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -88,10 +88,10 @@ export const HeroParallax = ({ products }) => {
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl z-50 relative mx-auto py-20 md:py-40 px-4 w-full flex flex-col gap-5  left-0 top-0">
+    <div className="max-w-7xl z-50 relative mx-auto pt-20 md:pt-40 px-4 w-full flex flex-col gap-5  left-0 top-0" id="home">
       <div>
-        <h1 className="text-xl md:text-9xl font-bold font-heading">NAVIRA</h1>
-        <p className="text-2xl text-secondary font-heading">
+        <h1 className="text-7xl md:text-9xl font-bold font-heading">NAVIRA</h1>
+        <p className="md:text-2xl text-secondary font-heading">
           18 - 19 January 2025 | CE Chengannur
         </p>
       </div>
@@ -125,10 +125,6 @@ export const ProductCard = ({ product, translate }) => {
         className="object-cover object-left-top absolute h-full w-full inset-0"
         alt={product.title}
       />
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
-      </h2>
     </motion.div>
   );
 };

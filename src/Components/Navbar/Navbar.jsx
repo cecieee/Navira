@@ -60,10 +60,10 @@ function Navbar() {
   return (
     <nav
       className={`fixed w-screen z-30 transition duration-300 ease-in-out ${
-        isScrolled ? "bg-primary backdrop-blur-xl shadow-lg" : ""
-      }`}
+        isScrolled ? "bg-dark backdrop-blur-xl shadow-lg" : ""
+      } ${scrollPercentage > 99 ? "opacity-0 pointer-events-none" : "opacity-100"} ${isOpen ? "bg-dark" : ""}`}
     >
-        <div className="flex items-center w-screen justify-between h-20 max-[767px]:h-16 max-[767px]:w-[90vw]">
+        <div className={`flex items-center w-screen justify-between h-20 max-[767px]:h-16 max-[767px]:w-[90vw]`}>
           <div className="flex items-center justify-around grow">
             <div className="flex-shrink-0 ">
               <img
@@ -136,7 +136,7 @@ function Navbar() {
         </div>
       <div className={`h-1 bg-secondary`} style={{ width: `${scrollPercentage}%` }} ></div>
       {isOpen && (
-        <div className="md:hidden bg-primary">
+        <div className="md:hidden bg-dark">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {sectionIds.map((id) => (
               <a

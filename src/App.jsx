@@ -20,8 +20,14 @@ import { HeroParallax } from "./Components/ui/Hero-Parallax.jsx";
 import Countdown from "./Components/Countdown.jsx";
 import Photo1 from "../src/assets/Images/photo1.png";
 import Photo2 from "../src/assets/Images/photo2.png";
-import Photo3 from "../src/assets/Images/photo3.png";
+import Photo3 from "../src/assets/Images/vol.webp";
 import Photo4 from "../src/assets/Images/photo4.png";
+import Photo5 from "../src/assets/Images/photo5.png";
+import Photo6 from "../src/assets/Images/photo6.png";
+import Photo7 from "../src/assets/Images/photo7.png";
+import Photo8 from "../src/assets/Images/photo3.png";
+import Photo9 from "../src/assets/Images/photo10.png";
+import Photo10 from "../src/assets/Images/photo11.webp";
 import { BackgroundBeams } from "./Components/ui/Background-Beams.jsx";
 
 if (window.innerWidth > 767)
@@ -41,95 +47,80 @@ function App() {
     setLoading(true);
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 6000);
     return () => clearTimeout(timeout);
   }, [location]);
 
   const products = [
     {
       title: "Moonbeam",
-      link: "https://gomoonbeam.com",
       thumbnail: Photo1,
     },
     {
       title: "Cursor",
-      link: "https://cursor.so",
       thumbnail: Photo2,
     },
     {
       title: "Rogue",
-      link: "https://userogue.com",
       thumbnail: Photo3,
     },
 
     {
       title: "Editorially",
-      link: "https://editorially.org",
       thumbnail: Photo4,
     },
     {
       title: "Editrix AI",
-      link: "https://editrix.ai",
-      thumbnail: Photo4,
+      thumbnail: Photo5,
     },
     {
       title: "Pixel Perfect",
-      link: "https://app.pixelperfect.quest",
-      thumbnail: Photo4,
+      thumbnail: Photo6,
     },
 
     {
       title: "Algochurn",
-      link: "https://algochurn.com",
-      thumbnail: Photo4,
+      thumbnail: Photo7,
     },
     {
       title: "Aceternity UI",
-      link: "https://ui.aceternity.com",
-      thumbnail: Photo4,
+      thumbnail: Photo8,
     },
     {
       title: "Tailwind Master Kit",
-      link: "https://tailwindmasterkit.com",
-      thumbnail: Photo4,
+      thumbnail: Photo9,
     },
     {
       title: "SmartBridge",
-      link: "https://smartbridgetech.com",
-      thumbnail: Photo4,
+      thumbnail: Photo10,
     },
     {
       title: "Renderwork Studio",
-      link: "https://renderwork.studio",
-      thumbnail: Photo4,
+      thumbnail: Photo1,
     },
 
     {
       title: "Creme Digital",
-      link: "https://cremedigital.com",
-      thumbnail: Photo4,
+      thumbnail: Photo3,
     },
     {
       title: "Golden Bells Academy",
-      link: "https://goldenbellsacademy.com",
-      thumbnail: Photo4,
+      thumbnail: Photo5,
     },
     {
       title: "Invoker Labs",
-      link: "https://invoker.lol",
-      thumbnail: Photo4,
+      thumbnail: Photo7,
     },
     {
       title: "E Free Invoice",
-      link: "https://efreeinvoice.com",
-      thumbnail: Photo4,
+      thumbnail: Photo9,
     },
   ];
 
   return (
-    <div className="overflow-x-hidden App">
-      {/* {loading && <Loading />} */}
-      <div className="relative antialiased text-white App bg-primary">
+    <div className={`overflow-x-hidden App bg-dark ${loading ? "h-screen w-screen overflow-hidden" : ""}`}>
+      {loading && <Loading />}
+      <div className="relative antialiased text-white App">
         <Navbar />
         <HeroParallax products={products} />
         <TracingBeam>

@@ -9,7 +9,7 @@ function Mapsection() {
   return (
     <div
       id="Contact"
-      className=" relative flex h-fit min-h-[35vh] text-white font-heading bg-right bg-cover bg-no-repeat max-[950px]:min-h-fit "
+      className=" relative mt-5 flex h-fit min-h-[35vh] text-white font-heading bg-right bg-cover bg-no-repeat max-[950px]:min-h-fit "
       style={{ backgroundImage: `url('${Map2}')` }}>
       <div className="absolute w-full h-full bg-gradient-to-r from-dark via-dark to-transparent z-0 max-[950px]:bg-black"></div>
       {/* eslint-disable-next-line*/}
@@ -25,7 +25,7 @@ function Mapsection() {
             Be part of the tech revolution at Navira - reserve your tickets
             today for a glimpse into tomorrow's world
           </p>
-          <CTA />
+          <CTA width="250px" height="50px"/>
           {/* <a
             href={"http://www.yepdesk.com/emergence-3"}
             className="bg-[#EC431B] h-12 w-[30vh] flex mt-10 justify-center items-center max-[950px]:w-full max-[950px]:mt-2 border-black hover:bg-black hover:border hover:border-[#EC431B] hover:text-[#EC431B] delay-75 transition-all ease-in-out">
