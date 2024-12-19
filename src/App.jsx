@@ -49,7 +49,7 @@ function App() {
       setLoading(false);
     }, 6000);
     return () => clearTimeout(timeout);
-  }, [location]);
+  }, []);
 
   const products = [
     {

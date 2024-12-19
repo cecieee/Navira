@@ -41,7 +41,7 @@ function Footer() {
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#workshops">Workshops</a>
-            <a href="#industrial visit">Industrial Visit</a>
+            <a href="#Industrial visit">Industrial Visit</a>
           </div>
           <div className="flex flex-col items-start w-fit">
             <span className="flex items-start gap-2 text-sm max-[425px]:flex-wrap max-[425px]:justify-center">
