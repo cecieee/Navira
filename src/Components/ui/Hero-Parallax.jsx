@@ -15,7 +15,7 @@ export const HeroParallax = ({ products }) => {
     offset: ["start start", "end start"],
   });
 
-  const springConfig = { stiffness: 230, damping: 50 };
+  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
 
   const translateX = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, 1000]),
@@ -60,7 +60,7 @@ export const HeroParallax = ({ products }) => {
     <div
       ref={ref}
       className="h-fit pt-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
-      <Header scrollYProgress={scrollYProgress} springConfig={springConfig} />
+      <Header scrollYProgress={scrollYProgress}/>
       <motion.div
         style={{
           rotateX,
@@ -101,7 +101,7 @@ export const HeroParallax = ({ products }) => {
   );
 };
 
-export const Header = ({scrollYProgress, springConfig}) => {
+export const Header = ({scrollYProgress}) => {
   // const imgStyle = {
   //   transform:
   //     scrollY > 10
@@ -109,6 +109,7 @@ export const Header = ({scrollYProgress, springConfig}) => {
   //       : "scale(1) translateY(0)",
   //   transition: "transform 3s ease-in-out",
   // };
+  const springConfig = { stiffness: 200, damping: 30}
   const scale = useSpring(useTransform(scrollYProgress, [0, 0.2], [1, 2]), springConfig);
   const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [0, 500]), springConfig);
   
@@ -119,7 +120,7 @@ export const Header = ({scrollYProgress, springConfig}) => {
       id="home">
       <div className="flex flex-col gap-2">
         {/* <h1 className="font-bold text-7xl md:text-9xl font-heading">NAVIRA</h1> */}
-        <motion.img src={Logo} className={`max-md:w-[80vw] md:w-[30vw] mb-1 `} style={window.innerWidth > 768 ? {scale, translateY} : {translateY}} alt="" />
+        <motion.img src={Logo} className={`max-md:w-[80vw] md:w-[30vw] mb-1 `} style={window.innerWidth > 768 ? {scale, translateY, transformOrigin: "bottom left"} : {translateY}} alt="" />
         <p className={`md:text-3xl text-secondary font-heading transition duration-500 ease-in-out ${scrollY > 10 ? "opacity-0" : "opacity-100"}`}>
           18 - 19 January 2025 | CE Chengannur
         </p>
