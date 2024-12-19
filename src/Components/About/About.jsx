@@ -27,7 +27,7 @@ function About() {
 
   return (
     <div
-      className="flex flex-wrap gap-10 items-center w-screen overflow-hidden h-fit "
+      className="flex flex-wrap items-center w-screen gap-10 overflow-hidden h-fit "
       id="about"
     >
       <div className="px-3 w-fit flex flex-col items-center  min-[1000px]:h-screen min-[1000px]:w-1/3  min-[1000px]:ml-5 min-[1000px]:mr-10 min-[1000px]:justify-center min-[767px]:visible max-[767px]:hidden">
@@ -43,7 +43,7 @@ function About() {
         />
       </div>
 
-      <div className="flex flex-col justify-start h-full ml-10 mr-10  min-[1000px]:w-[45%] min-[1000px]:ml-20">
+      <div className="flex flex-col justify-start h-full ml-10 mr-10  min-[1000px]:w-[45%] min-[1000px]:ml-20 max-[767px]:mt-16">
         {/* <h1 className="text-secondary text-4xl font-heading w-full mt-10 min-[1000px]:text-start">About NAVIRA</h1> */}
 
         {/* <div className=" px-3 w-fit flex flex-col  min-[1000px]:h-screen min-[1000px]:w-1/3 min-[1000px]:mt-40 min-[1000px]:ml-5 min-[1000px]:mr-10 min-[1000px]:justify-center min-[767px]:hidden">

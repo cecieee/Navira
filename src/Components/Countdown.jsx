@@ -70,7 +70,7 @@ const Countdown = () => {
       }, []);
     
   return (
-      <div className="mb-20 max-[450px]:my-0 font-heading">
+      <div className="mb-20 max-[450px]:my-0 font-heading max-[450px]:mt-14">
           <div className="flex flex-col justify-center w-full mb-10">
         <span className="mb-3 text-4xl font-bold text-center font-heading text-secondary">
           Countdown
@@ -85,7 +85,7 @@ const Countdown = () => {
         <span className="text-2xl sm:text-3xl font-semibold text-[#db5237] text-center tracking-widest px-2">
         </span>
         <div className="flex gap-3 lg:gap-10">
-          <div className="flex flex-col gap-5 relative">
+          <div className="relative flex flex-col gap-5">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] border-4 border-secondary rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full "></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#000]">
@@ -93,12 +93,12 @@ const Countdown = () => {
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full "></div>
             </div>
-            <span className="text-secondary text-xs sm:text-2xl text-center capitalize">
+            <span className="text-xs text-center capitalize text-secondary sm:text-2xl">
               {countDownTime?.days === 1 ? "Day" : "Days"}
             </span>
           </div>
           <h1 className="text-9xl text-secondary max-sm:hidden">:</h1>
-          <div className="flex flex-col gap-5 relative">
+          <div className="relative flex flex-col gap-5">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] border-4 border-secondary rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full "></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#000]">
@@ -106,12 +106,12 @@ const Countdown = () => {
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full "></div>
             </div>
-            <span className="text-secondary text-xs sm:text-2xl text-center capitalize">
+            <span className="text-xs text-center capitalize text-secondary sm:text-2xl">
               {countDownTime?.hours === 1 ? "Hour" : "Hours"}
             </span>
           </div>
           <h1 className="text-9xl text-secondary max-sm:hidden">:</h1>
-          <div className="flex flex-col gap-5 relative">
+          <div className="relative flex flex-col gap-5">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] border-4 border-secondary rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full "></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#000]">
@@ -119,12 +119,12 @@ const Countdown = () => {
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full "></div>
             </div>
-            <span className="text-secondary text-xs sm:text-2xl text-center capitalize">
+            <span className="text-xs text-center capitalize text-secondary sm:text-2xl">
               {countDownTime?.minutes === 1 ? "Minute" : "Minutes"}
             </span>
           </div>
           <h1 className="text-9xl text-secondary max-sm:hidden">:</h1>
-          <div className="flex flex-col gap-5 relative">
+          <div className="relative flex flex-col gap-5">
             <div className="h-12 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#f7f7f7] border-4 border-secondary rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full "></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#000]">
@@ -132,7 +132,7 @@ const Countdown = () => {
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full "></div>
             </div>
-            <span className="text-secondary text-xs sm:text-2xl text-center capitalize">
+            <span className="text-xs text-center capitalize text-secondary sm:text-2xl">
               {countDownTime?.seconds === 1 ? "Second" : "Seconds"}
             </span>
           </div>
