@@ -1,20 +1,21 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import CTA from "../CTA";
-import Logo from "../../assets/Logos/Navira.jpg";
+import Logo from "../../assets/Logos/logo.svg";
 
 export const HeroParallax = ({ products }) => {
+  const [scrollY, setScrollY] = useState(0);
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
-  const ref = React.useRef(null);
+  const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 230, damping: 50 };
 
   const translateX = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, 1000]),
@@ -40,11 +41,26 @@ export const HeroParallax = ({ products }) => {
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  console.log(scrollY)
+
   return (
     <div
       ref={ref}
       className="h-fit pt-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
-      <Header />
+      <Header scrollYProgress={scrollYProgress} springConfig={springConfig} />
       <motion.div
         style={{
           rotateX,
@@ -85,25 +101,36 @@ export const HeroParallax = ({ products }) => {
   );
 };
 
-export const Header = () => {
+export const Header = ({scrollYProgress, springConfig}) => {
+  // const imgStyle = {
+  //   transform:
+  //     scrollY > 10
+  //       ? "scale(2) translateY(270px)"
+  //       : "scale(1) translateY(0)",
+  //   transition: "transform 3s ease-in-out",
+  // };
+  const scale = useSpring(useTransform(scrollYProgress, [0, 0.2], [1, 2]), springConfig);
+  const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [0, 500]), springConfig);
+  
+
   return (
     <div
-      className="relative top-0 left-0 z-50 flex flex-col w-full gap-5 px-4 pt-20 mx-auto max-w-7xl md:pt-40"
+      className="relative top-0 left-0 z-50 flex flex-col w-full gap-2 px-4 pt-20 mx-auto max-w-7xl md:pt-40"
       id="home">
-      <div>
-        <h1 className="font-bold text-7xl md:text-9xl font-heading">NAVIRA</h1>
-        {/* <img src={Logo} alt="" /> */}
-        <p className="md:text-2xl text-secondary font-heading">
+      <div className="flex flex-col gap-2">
+        {/* <h1 className="font-bold text-7xl md:text-9xl font-heading">NAVIRA</h1> */}
+        <motion.img src={Logo} className={`max-md:w-[80vw] md:w-[30vw] mb-1 `} style={window.innerWidth > 768 ? {scale, translateY} : {translateY}} alt="" />
+        <p className={`md:text-3xl text-secondary font-heading transition duration-500 ease-in-out ${scrollY > 10 ? "opacity-0" : "opacity-100"}`}>
           18 - 19 January 2025 | CE Chengannur
         </p>
       </div>
-      <p className="max-w-2xl mt-8 text-base md:text-xl font-heading dark:text-neutral-200">
+      <p className={`max-w-2xl mt-8 mb-2 text-base md:text-xl font-heading  transition duration-500 ease-in-out ${scrollY > 10 ? "opacity-0" : "opacity-100"}`}>
         Navira: Journey Beyond Limits, an all-Kerala event by IEEE Women in
         Engineering Affinity Group College of Engineering Chengannur(WIE AG
         CEC), and IEEE Industry Applications Society Student Branch Chapter
         College of Engineering Chengannur (IAS SBC CEC)
       </p>
-      <CTA width="250px" height="40px" />
+      <CTA width="250px" height="40px" opacity={scrollY > 10 ? 0 : 100} />
     </div>
   );
 };

@@ -7,14 +7,16 @@ function CTA({
   text_color = "primary",
   text = "REGISTER",
   size = "1em",
+  opacity = 100
 }) {
   const arr = "md"
   return (
     <div
-      className="group rounded-md cursor-pointer flex px-2 items-center bg-secondary text-primary font-semibold"
+      className="group rounded-md cursor-pointer flex px-2 items-center bg-secondary text-primary transition ease-in-out duration-300 font-semibold"
       style={{
         height: height,
         width: width,
+        opacity: opacity
       }}
       onClick={() => window.open("https://www.yepdesk.com/navira/private/2isbt0kf7l")}
     >
