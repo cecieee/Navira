@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import db from "../../assets/Images/photo1.png";
+import db from "../../assets/Images/photo1.webp";
 import IV1 from "../../assets/IV1.jpg"
 import IV2 from "../../assets/IV2.png"
 import IV3 from "../../assets/IV3.jpg"

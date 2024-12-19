@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import w1 from '../../assets/Images/photo1.png'
+import w1 from '../../assets/Images/photo1.webp'
 import k1 from '../../assets/Why1.jpg'
 import './Why Navira.css';
 
