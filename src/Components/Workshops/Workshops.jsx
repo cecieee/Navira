@@ -22,24 +22,22 @@ const cardList = [
   },
   {
     img: _02,
-    title: "Blockchain",
-    desc: "Navira; Journey Beyond Limits introduces workshop on Blockchain for the participants to explore the functionality of decentralized systems, secure data management, and real-world applications in industries like finance and  supply chain.",
+    title: "AI and ML for Healthcare, Finance, and EVs",
+    desc: "The integration of AI and ML in healthcare, finance, and EVs is redefining innovation and efficiency. Navira: Journey Beyond Limits brings you a workshop to explore their real-world applications in diagnostics, analytics, and EVs.",
     delay: "0",
     hover_img: _02_hover,
     classname: "pb-7",
-    cardpadding: "pb-24",
+    cardpadding: "pb-16",
   },
   {
     img: _03,
-    title: "Beck N Protocol",
-    desc: "Beck N Protocol is a framework that aims to smoothen the interaction between buyers and sellers in digital services. Navira; Journey Beyond Limits brings an opportunity to navigate through the concepts of this structure and it's possibilities.",
+    title: "Extended Reality",
+    desc: "Navira: Journey Beyond Limits brings you a workshop on Extended Reality, introducing Virtual Reality, Augmented Reality, and Mixed Reality. Discover how XR is transforming industries like education and healthcare.",
     delay: "100",
     hover_img: _03_hover,
     classname: "pb-7",
-    cardpadding: "pb-24",
+    cardpadding: "pb-32",
   },
-
-
 ];
 // data-aos='fade-left' data-aos-duration='200' data-aos-delay={delay}
 function Card({ img, title, desc, delay, hover_img, classname, cardpadding }) {
@@ -52,8 +50,7 @@ function Card({ img, title, desc, delay, hover_img, classname, cardpadding }) {
         }
         data-aos="fade-left"
         data-aos-duration="200"
-        data-aos-delay={delay}
-      >
+        data-aos-delay={delay}>
         <div className="relative w-24 h-20">
           <img src={img} alt="" className="absolute w-24 max-[1240px]:w-20" />
           <img
@@ -66,8 +63,7 @@ function Card({ img, title, desc, delay, hover_img, classname, cardpadding }) {
           className={
             "pl-3 text-[1.5vw] font-semibold max-[1100px]:text-[1.7vw] max-[890px]:text-[2.5vw] max-[450px]:text-[6vw] " +
             classname
-          }
-        >
+          }>
           {title}
         </p>
         <p className="pl-3 text-[1vw] text-pretty max-[890px]:text-[1.6vw] max-[450px]:text-[3vw]">
@@ -108,8 +104,7 @@ function Products() {
   return (
     <div
       className="flex flex-col w-screen p-20 max-[920px]:p-5 h-fit max-[1100px]:p-10"
-      id="workshops"
-    >
+      id="workshops">
       <div className="flex flex-col justify-center w-full mb-20 ">
         <span className="mb-3 text-4xl font-bold text-center font-heading text-secondary">
           Workshops
@@ -118,8 +113,7 @@ function Products() {
           ref={elementRef}
           className={`bg-secondary w-[30vh] h-1 rounded-full mt-1 ${
             isVisible ? "animate1" : ""
-          }`}
-        ></span>
+          }`}></span>
       </div>
 
       <div className=" w-full h-fit my-10 items-stretch flex max-[1100px]:self-center max-[930px]:gap-3 justify-center gap-5 flex-wrap max-[1024px]:w-full ">
