@@ -12,32 +12,34 @@ import { Link } from "react-router-dom";
 const cardList = [
   {
     img: _01,
-    title: "Blockchain",
-    desc: "Navira; Journey Beyond Limits introduces workshop on Blockchain for the participants to explore the functionality of decentralized systems, secure data management, and real-world applications in industries like finance and  supply chain.",
-    delay: "0",
+    title: "Sensor Integration and IOT development",
+    desc: "The efficacy in transmitting and receiving real-time data is crucial in applications where timely and accurate information is essential. The workshop on Sensor Integration and IoT by Navira offers an opportunity to enhance skills in sensor integration and IoT solution development.",
+    // desc: "Enhance your skills in sensor integration and IoT development with Navira's workshop, focusing on real-time data transmission and building efficient IoT solutions for practical applications.",
+    delay: "200",
     hover_img: _01_hover,
-    classname: "pb-7",
-    cardpadding: "pb-24",
+    classname: "",
+    cardpadding: "pb-16",
   },
   {
     img: _02,
-    title: "Beck N Protocol",
-    desc: "Beck N Protocol is a framework that aims to smoothen the interaction between buyers and sellers in digital services. Navira; Journey Beyond Limits brings an opportunity to navigate through the concepts of this structure and it's possibilities.",
-    delay: "100",
+    title: "Blockchain",
+    desc: "Navira; Journey Beyond Limits introduces workshop on Blockchain for the participants to explore the functionality of decentralized systems, secure data management, and real-world applications in industries like finance and  supply chain.",
+    delay: "0",
     hover_img: _02_hover,
     classname: "pb-7",
     cardpadding: "pb-24",
   },
   {
     img: _03,
-    title: "Sensor Integration and IOT development",
-    desc: "The efficacy in transmitting and receiving real-time data is crucial in applications where timely and accurate information is essential. The workshop on Sensor Integration and IoT by Navira offers an opportunity to enhance skills in sensor integration and IoT solution development.",
-    // desc: "Enhance your skills in sensor integration and IoT development with Navira's workshop, focusing on real-time data transmission and building efficient IoT solutions for practical applications.",
-    delay: "200",
+    title: "Beck N Protocol",
+    desc: "Beck N Protocol is a framework that aims to smoothen the interaction between buyers and sellers in digital services. Navira; Journey Beyond Limits brings an opportunity to navigate through the concepts of this structure and it's possibilities.",
+    delay: "100",
     hover_img: _03_hover,
-    classname: "",
-    cardpadding: "pb-16",
+    classname: "pb-7",
+    cardpadding: "pb-24",
   },
+
+
 ];
 // data-aos='fade-left' data-aos-duration='200' data-aos-delay={delay}
 function Card({ img, title, desc, delay, hover_img, classname, cardpadding }) {
