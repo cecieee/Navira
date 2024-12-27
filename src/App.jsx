@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import Mapsection from "./Components/Mapsection/Mapsection";
 import Products from "./Components/Workshops/Workshops.jsx";
 import Vision from "./Components/Why Navira/Why Navira.jsx";
+import Sponsors from "./Components/Sponsors/Sponsors.jsx";
 import Whyus from "./Components/Industrial Visits/Industrial Visits.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom/dist";
 // import Gallery from "./Pages/Gallery/Gallery.jsx";
@@ -130,6 +131,7 @@ function App() {
               <Countdown />
             </div>
             <Organizer />
+            <Sponsors />
             <Products />
             <Vision />
             <Whyus />
