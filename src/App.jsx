@@ -10,6 +10,7 @@ import Products from "./Components/Workshops/Workshops.jsx";
 import Vision from "./Components/Why Navira/Why Navira.jsx";
 import Sponsors from "./Components/Sponsors/Sponsors.jsx";
 import Whyus from "./Components/Industrial Visits/Industrial Visits.jsx";
+import StartupSession from "./Components/Startup Session/StartupSession.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom/dist";
 // import Gallery from "./Pages/Gallery/Gallery.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
@@ -134,6 +135,7 @@ function App() {
             <Sponsors />
             <Products />
             <Vision />
+            <StartupSession />
             <Whyus />
           </div>
         </TracingBeam>

@@ -2,12 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Organizers.css";
 
 import XRHorizon from "../../assets/Logos/XR Horizon Logo HD.png";
+import Notion from "../../assets/Logos/Notion.png";
 import { img } from "framer-motion/client";
 
 export default function Sponsors() {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
   const Logos = [
+    Notion,
     XRHorizon
   ];
 
