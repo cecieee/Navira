@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Organizers.css";
 
 import XRHorizon from "../../assets/Logos/XR Horizon Logo HD.png";
-import Notion from "../../assets/Logos/Notion.png";
+import Notion from "../../assets/Logos/notion.png";
 
 
 export default function Sponsors() {
