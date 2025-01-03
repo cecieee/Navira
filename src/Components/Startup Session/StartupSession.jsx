@@ -48,7 +48,7 @@ export default function Organizer() {
           <img src={speaker} alt="" className="scale-75 w-fit h-fit" />
           <div className="absolute z-20 w-full h-[35%] flex flex-col justify-center items-center bottom-0">
             <p className="text-3xl text-secondary font-heading">Anooja Bashir</p>
-            <p className="text-sm">CEO & Co-FounderFlexiCloud</p>
+            <p className="text-sm">CEO & Co-Founder FlexiCloud</p>
             
           </div>
           <div
