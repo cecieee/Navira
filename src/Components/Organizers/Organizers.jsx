@@ -5,10 +5,7 @@ import IEEE_LOGO from "../../assets/Logos/IEEE-logo-WHITE.png";
 import IEEE_SB_LOGO from "../../assets/Logos/ieee_sb_cec_logo_white.png";
 import WIE_LOGO from "../../assets/Logos/wie-WHITE.png";
 import IAS_LOGO from "../../assets/Logos/ias-png-white.png";
-import Foundation_Logo from "../../assets/Logos/foundation.png";
-import YP_Logo from "../../assets/Logos/YP.png";
-import JT_Logo from "../../assets/Logos/jt-logo.png";
-import { img } from "framer-motion/client";
+
 
 export default function Organizer() {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,9 +15,7 @@ export default function Organizer() {
     IEEE_SB_LOGO,
     WIE_LOGO,
     IAS_LOGO,
-    Foundation_Logo,
-    YP_Logo,
-    JT_Logo,
+
   ];
 
   useEffect(() => {

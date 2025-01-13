@@ -31,6 +31,7 @@ import Photo8 from "../src/assets/Images/photo3.webp";
 import Photo9 from "../src/assets/Images/photo10.webp";
 import Photo10 from "../src/assets/Images/photo11.webp";
 import { BackgroundBeams } from "./Components/ui/Background-Beams.jsx";
+import Highlights from "./Components/Highlights/Highlights.jsx";
 
 if (window.innerWidth > 767)
   AOS.init({
@@ -134,6 +135,7 @@ function App() {
             <Organizer />
             <Sponsors />
             <Products />
+            <Highlights />
             <Vision />
             <StartupSession />
             <Whyus />
