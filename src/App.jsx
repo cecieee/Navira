@@ -137,7 +137,7 @@ function App() {
             <Products />
             <Highlights />
             <Vision />
-            <StartupSession />
+            {/* <StartupSession /> */}
             <Whyus />
           </div>
         </TracingBeam>
