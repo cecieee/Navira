@@ -11,6 +11,8 @@ import CircHack from "../assets/Posters/Circhack.jpg";
 import Scaleup from "../assets/Posters/Scaleup.jpg";
 import Startup from "../assets/Posters/Startup.jpg";
 import Conclave from "../assets/Posters/Conclave.jpg";
+import Inauguration from "../assets/Posters/Inauguration.jpg";
+import CulturalNight from "../assets/Posters/Cultural Nights.jpg";
 
 export default function EventCarousel() {
   const [current, setCurrent] = useState(0);
@@ -28,10 +30,9 @@ export default function EventCarousel() {
   const data = [
     {
       img: CircHack,
-      pretag:"PRE-EVENT",
+      pretag: "PRE-EVENT",
       title: "CIRC-HACK",
       desc: "Circuit-building Hackathon",
-      
     },
     {
       // pretag:"PRE-EVENT",
@@ -40,7 +41,7 @@ export default function EventCarousel() {
       desc: "An elemental Talk Session on Startups.",
     },
     {
-      pretag:"PRE-EVENT",
+      pretag: "PRE-EVENT",
       img: Startup,
       title: "Startup Talks",
       desc: "A prelude to Navira, inspiring entrepreneurial journeys with expert insights.",
@@ -49,6 +50,16 @@ export default function EventCarousel() {
       img: Conclave,
       title: "Conclave & Elevate",
       desc: "An enlightening session on how IEEE empowers innovation and shapes managerial growth.",
+    },
+    // {
+    //   img: Inauguration,
+    //   title: "Inauguration",
+    //   desc: "",
+    // },
+    {
+      img: CulturalNight,
+      title: "Cultural Night",
+      desc: "Unleash your joy, celebrate and let the rhythm guide your steps. ",
     },
   ];
 
@@ -104,9 +115,7 @@ export default function EventCarousel() {
         })}
         {/* Carousel Details */}
         <div className="absolute flex flex-col justify-center h-full left-[calc(70%-155px)]   pl-3  max-[780px]:hidden">
-          <p className="text-lg">
-            {data[current].pretag || ""}
-          </p>
+          <p className="text-lg">{data[current].pretag || ""}</p>
           <p className="text-5xl font-semibold uppercase text-secondary">
             {data[current].title}
           </p>
