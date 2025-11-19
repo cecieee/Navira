@@ -1,9 +1,12 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" },
-      {
-        "source":"/volunteer_call",
-        "destination":"https://forms.gle/1T2Zer7Zw9uTRk7x9"
-      }
-    ]
-  }
+  "redirects": [
+    {
+      "source": "/volunteer_call",
+      "destination": "https://forms.gle/1T2Zer7Zw9uTRk7x9",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
